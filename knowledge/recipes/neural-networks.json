@@ -1,0 +1,268 @@
+{
+  "title": "But what is a Neural Network? | Chapter 1, Deep learning",
+  "hook": "A sloppy 28\u00d728 pixel '3' appears on screen and the narration dares the viewer to explain why recognizing it is trivially easy for humans yet dauntingly hard to program.",
+  "scenes": [
+    {
+      "beat": "hook",
+      "purpose": "Establish the core tension between human effortlessness and computational difficulty",
+      "on_screen": [
+        {
+          "kind": "shape",
+          "zone": "stage",
+          "desc": "Large pixelated '3' rendered as a grid of colored squares"
+        },
+        {
+          "kind": "text",
+          "zone": "formula_band",
+          "desc": "Brace labels showing 28px \u00d7 28px dimensions"
+        },
+        {
+          "kind": "shape",
+          "zone": "diagram_right",
+          "desc": "Pi creature reacting with 'sassy' then 'pondering' expression"
+        },
+        {
+          "kind": "arrow",
+          "zone": "stage",
+          "desc": "Arrow from pixel grid pointing to handwritten '3' symbol"
+        }
+      ],
+      "transition": "Multiple alternate '3' images fade in on the right; pixel grid gains yellow tint to show firing cells concept",
+      "narration_gist": "Your brain trivially recognizes wildly different pixel patterns as the same digit, but writing a program to do this goes from comically trivial to dauntingly difficult."
+    },
+    {
+      "beat": "anchor",
+      "purpose": "State the video's scope and promise: structure now, learning next",
+      "on_screen": [
+        {
+          "kind": "text",
+          "zone": "title_band",
+          "desc": "Words 'Machine learning' (green) and 'Neural network' (blue)"
+        },
+        {
+          "kind": "shape",
+          "zone": "stage",
+          "desc": "Small network diagram with layered circles and edges"
+        },
+        {
+          "kind": "text",
+          "zone": "formula_band",
+          "desc": "Equation \u03c3(W_l \u00b7 a_l + b_l) written above network"
+        },
+        {
+          "kind": "shape",
+          "zone": "conclusion_band",
+          "desc": "Two video-icon placeholders labeled 'Structure' and 'Learning'"
+        }
+      ],
+      "transition": "Teacher-student scene; network diagram shrinks into video thumbnail icons",
+      "narration_gist": "I want to show you what a neural network actually is as a piece of math, not a buzzword \u2014 structure in this video, learning in the next."
+    },
+    {
+      "beat": "build",
+      "purpose": "Introduce neurons as number-holders and show the full layered architecture",
+      "on_screen": [
+        {
+          "kind": "shape",
+          "zone": "diagram_left",
+          "desc": "784-neuron input layer with brace labeled '784'"
+        },
+        {
+          "kind": "shape",
+          "zone": "stage",
+          "desc": "Full network: input \u2192 two 16-neuron hidden layers \u2192 10-neuron output"
+        },
+        {
+          "kind": "text",
+          "zone": "diagram_right",
+          "desc": "Output labels 0\u20139 next to output neurons"
+        },
+        {
+          "kind": "text",
+          "zone": "formula_band",
+          "desc": "Label 'Activation' with yellow highlight on example neuron showing decimal 0.2"
+        }
+      ],
+      "transition": "Pixel grid of a digit morphs into the first layer of circles; hidden layers fade in with large '?' marks",
+      "narration_gist": "Each neuron holds a number called its activation; 784 input neurons encode pixel brightness, two hidden layers of 16 are a mystery for now, and 10 output neurons represent digit confidence."
+    },
+    {
+      "beat": "build",
+      "purpose": "Motivate the layered structure with a hierarchy of visual abstractions",
+      "on_screen": [
+        {
+          "kind": "shape",
+          "zone": "diagram_left",
+          "desc": "Handwritten digit images for 9, 8, 4 with colored overlays"
+        },
+        {
+          "kind": "text",
+          "zone": "stage",
+          "desc": "Equations: nine = upper_loop + right_line, eight = upper_loop + lower_loop"
+        },
+        {
+          "kind": "shape",
+          "zone": "diagram_right",
+          "desc": "Network diagram with second-to-last layer neurons next to sub-pattern images"
+        },
+        {
+          "kind": "arrow",
+          "zone": "formula_band",
+          "desc": "Yellow edge group flashing between pattern layer and output layer"
+        }
+      ],
+      "transition": "Equation components fly into position beside network layer neurons; earlier digit equations fade out",
+      "narration_gist": "Ideally each hidden layer detects increasingly abstract sub-components \u2014 edges \u2192 loops/lines \u2192 digit parts \u2014 so the final layer just combines these patterns."
+    },
+    {
+      "beat": "build",
+      "purpose": "Zoom into one neuron to explain how weights encode a pixel detector",
+      "on_screen": [
+        {
+          "kind": "shape",
+          "zone": "diagram_left",
+          "desc": "Single enlarged neuron with incoming weighted edges (green/red thickness)"
+        },
+        {
+          "kind": "shape",
+          "zone": "stage",
+          "desc": "28\u00d728 pixel grid showing green positive weights and red negative weights"
+        },
+        {
+          "kind": "text",
+          "zone": "title_band",
+          "desc": "Question 'What parameters should exist?' in green"
+        },
+        {
+          "kind": "text",
+          "zone": "formula_band",
+          "desc": "Weighted sum expression w1\u00b7a1 + w2\u00b7a2 + \u2026 + wn\u00b7an"
+        }
+      ],
+      "transition": "Decimal parameter list transforms into a colored weight grid aligned with the pixel region",
+      "narration_gist": "Assign a weight to every connection; a weighted sum of pixel activations detects a region when positive weights sit on the target pixels and negative weights surround them."
+    },
+    {
+      "beat": "build",
+      "purpose": "Introduce the sigmoid (bias) to squish weighted sums into [0,1] and add thresholding",
+      "on_screen": [
+        {
+          "kind": "plot",
+          "zone": "stage",
+          "desc": "Sigmoid / logistic curve plotted from negative to positive inputs"
+        },
+        {
+          "kind": "text",
+          "zone": "formula_band",
+          "desc": "Expression sigmoid(w\u00b7a + bias) with bias highlighted"
+        },
+        {
+          "kind": "text",
+          "zone": "diagram_left",
+          "desc": "Labels 'weights \u2192 what pattern' and 'bias \u2192 when to activate'"
+        },
+        {
+          "kind": "text",
+          "zone": "title_band",
+          "desc": "Running total '13,000 weights and biases' count"
+        }
+      ],
+      "transition": "Sigmoid plot fades; attention shifts to scale of parameters across all layers",
+      "narration_gist": "Pump the weighted sum through a sigmoid to get a value in [0,1], and add a bias to set the threshold at which the neuron turns on."
+    },
+    {
+      "beat": "payoff",
+      "purpose": "Compress the full computation into compact matrix-vector notation",
+      "on_screen": [
+        {
+          "kind": "text",
+          "zone": "stage",
+          "desc": "Matrix equation a_{l+1} = \u03c3(W_l \u00b7 a_l + b_l) with color-coded vectors"
+        },
+        {
+          "kind": "text",
+          "zone": "diagram_left",
+          "desc": "Column vector of activations a_l (green)"
+        },
+        {
+          "kind": "text",
+          "zone": "diagram_right",
+          "desc": "Weight matrix W_l with rows = next-layer neurons"
+        },
+        {
+          "kind": "text",
+          "zone": "formula_band",
+          "desc": "Bias vector b_l added before sigmoid wraps everything"
+        }
+      ],
+      "transition": "Verbose per-neuron formula is replaced by the single matrix equation; earlier weight grid fades",
+      "narration_gist": "Organize activations as a vector, weights as a matrix, biases as a vector \u2014 then one compact expression \u03c3(Wa + b) describes every layer transition."
+    },
+    {
+      "beat": "payoff",
+      "purpose": "Reframe the entire network as one large, concrete mathematical function",
+      "on_screen": [
+        {
+          "kind": "text",
+          "zone": "stage",
+          "desc": "Statement 'The network is a function: 784 inputs \u2192 10 outputs'"
+        },
+        {
+          "kind": "shape",
+          "zone": "diagram_left",
+          "desc": "Full MNIST network diagram with activations lit up for a real digit"
+        },
+        {
+          "kind": "text",
+          "zone": "formula_band",
+          "desc": "Parameter count '~13,000 weights and biases'"
+        },
+        {
+          "kind": "shape",
+          "zone": "diagram_right",
+          "desc": "Highlighted winning output neuron with surrounding rectangle"
+        }
+      ],
+      "transition": "Network demo runs live feed-forward pass; output neuron lights up and gets a bounding box",
+      "narration_gist": "The whole network is just one complicated function with 13,000 parameters \u2014 reassuringly complex, but still just a function \u2014 and learning means finding the right parameter values."
+    },
+    {
+      "beat": "twist",
+      "purpose": "Honest postscript: sigmoid is old-school; ReLU is what modern nets use",
+      "on_screen": [
+        {
+          "kind": "text",
+          "zone": "title_band",
+          "desc": "Interview framing text naming guest Lisha Li"
+        },
+        {
+          "kind": "plot",
+          "zone": "stage",
+          "desc": "ReLU curve: max(0, a) \u2014 flat at zero then linear"
+        },
+        {
+          "kind": "text",
+          "zone": "formula_band",
+          "desc": "Label 'ReLU = Rectified Linear Unit'"
+        },
+        {
+          "kind": "text",
+          "zone": "conclusion_band",
+          "desc": "Contrast note: sigmoid \u2194 ReLU ease of training"
+        }
+      ],
+      "transition": "Talking-head style cut; Manim animation of ReLU shape replaces sigmoid plot",
+      "narration_gist": "Early networks used sigmoid, but modern deep networks almost always use ReLU \u2014 it's simpler and much easier to train."
+    }
+  ],
+  "lessons": [
+    "Open with a concrete, familiar object and a paradox that makes the viewer feel the problem viscerally before any formalism appears.",
+    "Use a recurring visual object (the network diagram) as an anchor that returns in every scene so viewers track cumulative progress.",
+    "Introduce abstraction in stages: show the messy per-neuron case first, then reveal the compact matrix form as a reward for following along.",
+    "Place color-coded weight grids spatially aligned with the pixel region they describe so the visual and the concept are inseparable.",
+    "Signal scope explicitly on screen \u2014 'this video covers structure, the next covers learning' \u2014 so viewers know exactly what the current episode promises.",
+    "End with a credibility-building twist (ReLU over sigmoid) that shows honest nuance without undermining the lesson just taught."
+  ],
+  "slug": "neural-networks",
+  "tags": "neural network deep learning neuron layer weights ai machine digit"
+}

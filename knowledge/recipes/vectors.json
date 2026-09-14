@@ -1,0 +1,247 @@
+{
+  "title": "Vectors, What Even Are They? (3Blue1Brown Essence of Linear Algebra Ch. 1)",
+  "hook": "A provocative opening quote \u2014 'The introduction of numbers as coordinates is an act of violence' \u2014 frames the entire video as a reconciliation between two ways of seeing, earning curiosity before a single vector is drawn.",
+  "scenes": [
+    {
+      "beat": "hook",
+      "purpose": "Establish the central tension: three valid but conflicting conceptions of a vector",
+      "on_screen": [
+        {
+          "kind": "text",
+          "zone": "title_band",
+          "desc": "Opening quote from Hermann Weyl in green highlight"
+        },
+        {
+          "kind": "shape",
+          "zone": "stage",
+          "desc": "Three Pi Creature characters (physicist pink, CS purple, mathematician) with labels"
+        },
+        {
+          "kind": "plot",
+          "zone": "stage",
+          "desc": "Number plane with a yellow vector and coordinate label introduced then faded"
+        }
+      ],
+      "transition": "Plane and labels fade out; three characters remain as anchors for each perspective",
+      "narration_gist": "There are three distinct but related ideas about what a vector is \u2014 physics, CS, and mathematics \u2014 and reconciling them is the point."
+    },
+    {
+      "beat": "build",
+      "purpose": "Concretize the physics perspective: vectors as arrows with length and direction",
+      "on_screen": [
+        {
+          "kind": "shape",
+          "zone": "diagram_left",
+          "desc": "Physicist Pi Creature in speaking mode"
+        },
+        {
+          "kind": "arrow",
+          "zone": "stage",
+          "desc": "Single arrow rotating and moving to show length/direction independence"
+        },
+        {
+          "kind": "text",
+          "zone": "title_band",
+          "desc": "'Two-dimensional' label in corner"
+        }
+      ],
+      "transition": "Other two characters fade out; random colored vectors appear then disappear; label swaps to 'Three-dimensional'",
+      "narration_gist": "A vector is an arrow in space \u2014 what defines it is length and direction, not position."
+    },
+    {
+      "beat": "build",
+      "purpose": "Concretize the CS perspective: vectors as ordered lists, order matters",
+      "on_screen": [
+        {
+          "kind": "shape",
+          "zone": "diagram_right",
+          "desc": "CS student Pi Creature in sassy mode"
+        },
+        {
+          "kind": "shape",
+          "zone": "stage",
+          "desc": "House SVG icon with square footage (red) and price (green) labels"
+        },
+        {
+          "kind": "text",
+          "zone": "formula_band",
+          "desc": "Column vector with footage/price entries; \u2260 swapped version showing order matters"
+        }
+      ],
+      "transition": "House and vector slide off-screen left; all three characters restored to plain mode",
+      "narration_gist": "A vector is an ordered list of numbers \u2014 model a house as [sq ft, price] and the order is part of the meaning."
+    },
+    {
+      "beat": "build",
+      "purpose": "Introduce the mathematician's view briefly, then explicitly defer it",
+      "on_screen": [
+        {
+          "kind": "shape",
+          "zone": "diagram_right",
+          "desc": "Mathematician Pi Creature pondering"
+        },
+        {
+          "kind": "arrow",
+          "zone": "diagram_left",
+          "desc": "v and w arrows with tip-to-tail sum arrow in green"
+        },
+        {
+          "kind": "text",
+          "zone": "formula_band",
+          "desc": "Array addition equation and scalar multiplication side by side"
+        },
+        {
+          "kind": "text",
+          "zone": "conclusion_band",
+          "desc": "'We'll ignore him for now' with circle drawn around abstract symbols"
+        }
+      ],
+      "transition": "Circle drawn dismissing abstraction; scene clears to single-thought framing scene",
+      "narration_gist": "The mathematician sees vectors as anything supporting addition and scalar multiplication \u2014 we'll set that aside and work concretely."
+    },
+    {
+      "beat": "anchor",
+      "purpose": "Fix the one mental image the viewer should hold throughout the series",
+      "on_screen": [
+        {
+          "kind": "arrow",
+          "zone": "stage",
+          "desc": "Single yellow vector rooted at origin on number plane"
+        },
+        {
+          "kind": "plot",
+          "zone": "stage",
+          "desc": "xy coordinate plane with axis labels"
+        },
+        {
+          "kind": "text",
+          "zone": "conclusion_band",
+          "desc": "Tail label with pointer line to origin dot"
+        }
+      ],
+      "transition": "Tail label fades; vector dramatically arcs away from origin and snaps back, reinforcing 'rooted at origin' rule",
+      "narration_gist": "Always picture a vector as an arrow with its tail fixed at the origin of a coordinate system."
+    },
+    {
+      "beat": "build",
+      "purpose": "Walk through the coordinate system and show how coordinates instruct movement",
+      "on_screen": [
+        {
+          "kind": "plot",
+          "zone": "stage",
+          "desc": "x-axis then y-axis built up with tick marks and unit brace labeled '1'"
+        },
+        {
+          "kind": "arrow",
+          "zone": "stage",
+          "desc": "Vector [-2,3] with colored x-line (red) and y-line (yellow) showing step path"
+        },
+        {
+          "kind": "text",
+          "zone": "diagram_right",
+          "desc": "Column vector bracket label with colored coordinate entries"
+        }
+      ],
+      "transition": "Scene clears back to axes only; 3D extension mentioned verbally with z-axis label written large",
+      "narration_gist": "The two numbers in a vector's coordinates are instructions: walk this far along x, then this far parallel to y."
+    },
+    {
+      "beat": "build",
+      "purpose": "Define vector addition geometrically then verify it numerically",
+      "on_screen": [
+        {
+          "kind": "arrow",
+          "zone": "stage",
+          "desc": "v (yellow) and w (maroon) arrows; w shifts to tip of v for tip-to-tail addition"
+        },
+        {
+          "kind": "arrow",
+          "zone": "stage",
+          "desc": "Sum vector (pink) drawn from origin to tip of repositioned w"
+        },
+        {
+          "kind": "text",
+          "zone": "formula_band",
+          "desc": "Column vector sum [1,2]+[3,-1]=[1+3, 2+(-1)] built step by step"
+        }
+      ],
+      "transition": "Why-question posed with alternative wrong sum shown; answered by walking a Randolph figure along each vector",
+      "narration_gist": "To add vectors, place the second's tail at the first's tip; the sum is the shortcut arrow \u2014 and numerically, just add corresponding components."
+    },
+    {
+      "beat": "build",
+      "purpose": "Define scalar multiplication through visual stretching, squishing, and flipping",
+      "on_screen": [
+        {
+          "kind": "arrow",
+          "zone": "stage",
+          "desc": "Vector v stretched to 2v, squished to (1/3)v, flipped and scaled to -1.8v"
+        },
+        {
+          "kind": "text",
+          "zone": "diagram_left",
+          "desc": "Scalar factor (2, 1/3, -1.8) written upper left before each transform"
+        },
+        {
+          "kind": "text",
+          "zone": "title_band",
+          "desc": "'Scaling' and 'Scalars' labels with example list"
+        }
+      ],
+      "transition": "Each example clears back to original vector before next; final scene shows numeric verification with 2\u00b7[3,1]=[6,2]",
+      "narration_gist": "Multiplying a vector by a scalar stretches or flips it, and numerically means multiplying every component by that scalar."
+    },
+    {
+      "beat": "payoff",
+      "purpose": "Synthesize both perspectives as equally valid, valuable for translation between them",
+      "on_screen": [
+        {
+          "kind": "shape",
+          "zone": "diagram_left",
+          "desc": "Physicist and CS student Pi Creatures exchanging speech bubbles"
+        },
+        {
+          "kind": "arrow",
+          "zone": "stage",
+          "desc": "Arrow with x/y component lines shown alongside column vector, double arrow between them"
+        },
+        {
+          "kind": "text",
+          "zone": "conclusion_band",
+          "desc": "Data grid of numbers transforming into vectors on a plane forming an ellipse"
+        }
+      ],
+      "transition": "Space-manipulation animation (wave homotopy + linear transform) demonstrates power of numeric-geometric translation",
+      "narration_gist": "Neither perspective is more fundamental \u2014 the power of linear algebra comes from freely translating between the geometric and numerical views."
+    },
+    {
+      "beat": "anchor",
+      "purpose": "Tease next video and close the loop",
+      "on_screen": [
+        {
+          "kind": "text",
+          "zone": "title_band",
+          "desc": "'Next video: Linear combinations, span, and bases'"
+        },
+        {
+          "kind": "shape",
+          "zone": "stage",
+          "desc": "Blue rectangle placeholder for next video thumbnail"
+        }
+      ],
+      "transition": "Everything fades; rectangle grows to fill stage",
+      "narration_gist": "Now that we have vector basics, next we'll explore span, bases, and linear dependence."
+    }
+  ],
+  "lessons": [
+    "Open with a conceptual conflict or provocative quote to make the viewer feel a tension worth resolving before any content is shown.",
+    "Assign each competing idea its own persistent visual anchor (a character, a color, a zone) so the viewer always knows whose perspective is on screen.",
+    "Defer abstract generalizations explicitly and on-screen \u2014 naming what you are skipping and why earns trust and keeps pacing tight.",
+    "Fix one canonical mental image early (vector rooted at origin) and physically demonstrate breaking then restoring that rule to make it stick.",
+    "Alternate between geometric and numeric representations of the same operation in the same scene so viewers build the translation reflex, not just one view.",
+    "Use a walking figure or animated step path through a diagram to turn abstract coordinate instructions into felt, embodied movement.",
+    "Reserve the conclusion_band for synthesis statements that explicitly name the transferable principle, not just a restatement of the example."
+  ],
+  "slug": "vectors",
+  "tags": "vector linear algebra coordinates arrow scaling addition span"
+}

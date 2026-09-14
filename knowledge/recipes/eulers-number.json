@@ -1,0 +1,234 @@
+{
+  "title": "Derivatives of Exponentials and the Number e",
+  "hook": "The video opens by admitting a deliberate gap in prior lessons\u2014exponential derivatives were left out\u2014then immediately promises to reveal why e is the most important base, creating curiosity through incompleteness.",
+  "scenes": [
+    {
+      "beat": "hook",
+      "purpose": "Frame the lesson as filling a known gap; raise the central question",
+      "on_screen": [
+        {
+          "kind": "text",
+          "zone": "title_band",
+          "desc": "Video series strip with prior episodes highlighted"
+        },
+        {
+          "kind": "text",
+          "zone": "stage",
+          "desc": "Known formulas: d(x^n)/dx and d(sin x)/dx"
+        },
+        {
+          "kind": "text",
+          "zone": "formula_band",
+          "desc": "Student speech bubble: '2^x, 7^x, e^x ???'"
+        }
+      ],
+      "transition": "Series strip stays; formulas and speech bubble fade as e^x grows and floats toward teacher",
+      "narration_gist": "We have derivative formulas for powers and trig, but exponentials like 2^x were deliberately left out until now."
+    },
+    {
+      "beat": "build",
+      "purpose": "Ground the abstract function 2^t in a concrete, continuous real-world metaphor",
+      "on_screen": [
+        {
+          "kind": "text",
+          "zone": "diagram_left",
+          "desc": "M(t) = 2^t with label 'Population mass'"
+        },
+        {
+          "kind": "shape",
+          "zone": "diagram_right",
+          "desc": "Grid of Pi creatures doubling each day"
+        },
+        {
+          "kind": "text",
+          "zone": "title_band",
+          "desc": "t = Time (in days) label"
+        }
+      ],
+      "transition": "Pi creature grid grows day by day; function label transforms from P(t) to M(t)",
+      "narration_gist": "Treat 2^t as a continuously growing population mass that doubles every day, making tiny changes in time meaningful."
+    },
+    {
+      "beat": "build",
+      "purpose": "Show the naive 'derivative equals itself' observation and immediately complicate it",
+      "on_screen": [
+        {
+          "kind": "text",
+          "zone": "diagram_left",
+          "desc": "M(t) = 2^t function label"
+        },
+        {
+          "kind": "text",
+          "zone": "stage",
+          "desc": "Day-to-day growth fraction: (2^{t+1} - 2^t)/1 = 2^t"
+        },
+        {
+          "kind": "shape",
+          "zone": "diagram_right",
+          "desc": "Rectangle highlighting new creatures added in one day"
+        },
+        {
+          "kind": "text",
+          "zone": "formula_band",
+          "desc": "Brace labeled 'Rate of change over one full day'"
+        }
+      ],
+      "transition": "Growth fraction transforms to show dt in denominator; brace label changes to 'in a small time'",
+      "narration_gist": "Growth over a full day equals the population size, which is tempting but only an approximation\u2014the true derivative needs infinitesimally small dt."
+    },
+    {
+      "beat": "build",
+      "purpose": "Derive the key algebraic structure: separate the t-dependent and dt-dependent parts",
+      "on_screen": [
+        {
+          "kind": "text",
+          "zone": "stage",
+          "desc": "(2^{t+dt} - 2^t)/dt expanded using exponent property"
+        },
+        {
+          "kind": "text",
+          "zone": "stage",
+          "desc": "Factored form: 2^t \u00b7 (2^{dt} - 1)/dt"
+        },
+        {
+          "kind": "arrow",
+          "zone": "stage",
+          "desc": "Brace isolating the (2^{dt}-1)/dt term"
+        },
+        {
+          "kind": "text",
+          "zone": "formula_band",
+          "desc": "Labels: 'Additive ideas' vs 'Multiplicative ideas'"
+        }
+      ],
+      "transition": "Multiplicative factor 2^t extracted to left; mystery constant term isolated in parentheses on right",
+      "narration_gist": "The exponential property splits the expression so that the dt-dependent mystery factor is completely separate from t, implying the derivative is proportional to itself."
+    },
+    {
+      "beat": "build",
+      "purpose": "Make the mystery constant tangible through numerical exploration",
+      "on_screen": [
+        {
+          "kind": "text",
+          "zone": "diagram_right",
+          "desc": "Calculator-style display: (2^{0.001}-1)/0.001 = 0.6931..."
+        },
+        {
+          "kind": "text",
+          "zone": "stage",
+          "desc": "Derivative equation: d(2^t)/dt = 2^t \u00b7 (0.6931...)"
+        },
+        {
+          "kind": "text",
+          "zone": "formula_band",
+          "desc": "dt shrinking through 0.1, 0.01, 0.0001, 0.0000001"
+        }
+      ],
+      "transition": "Numerical expression updates as dt decreases; constant stabilizes and gets highlighted in blue",
+      "narration_gist": "Plugging smaller and smaller dt values into the calculator shows the mystery constant converges to ~0.6931, a fixed number independent of t."
+    },
+    {
+      "beat": "twist",
+      "purpose": "Introduce e as the natural base where the proportionality constant equals exactly 1",
+      "on_screen": [
+        {
+          "kind": "text",
+          "zone": "stage",
+          "desc": "Comparison: bases 2, 3, 8 with constants 0.6931, 1.0986, 2.079"
+        },
+        {
+          "kind": "text",
+          "zone": "formula_band",
+          "desc": "Question: 'Is there a base where the constant = 1?'"
+        },
+        {
+          "kind": "text",
+          "zone": "conclusion_band",
+          "desc": "Answer revealed: e \u2248 2.71828..."
+        }
+      ],
+      "transition": "Pattern table fades; e^t graph appears in stage with tangent line annotation",
+      "narration_gist": "Comparing constants across bases reveals a pattern, and the special base e \u2248 2.718 is defined as the one where the proportionality constant is exactly 1."
+    },
+    {
+      "beat": "payoff",
+      "purpose": "Show e^t as self-slope on a graph, making the abstract definition visually concrete",
+      "on_screen": [
+        {
+          "kind": "plot",
+          "zone": "stage",
+          "desc": "Graph of e^t with tangent line at example point"
+        },
+        {
+          "kind": "arrow",
+          "zone": "stage",
+          "desc": "Vertical line showing height = e^x"
+        },
+        {
+          "kind": "text",
+          "zone": "formula_band",
+          "desc": "Slope label = e^t matching height label"
+        }
+      ],
+      "transition": "Tangent slides along curve; slope label and height label stay equal throughout",
+      "narration_gist": "On the graph of e^t, the slope of the tangent at any point exactly equals the height at that point\u2014a visually memorable definition."
+    },
+    {
+      "beat": "payoff",
+      "purpose": "Resolve the mystery constants using chain rule and natural log",
+      "on_screen": [
+        {
+          "kind": "text",
+          "zone": "stage",
+          "desc": "Rewrite: 2^t = e^{ln(2)\u00b7t}"
+        },
+        {
+          "kind": "text",
+          "zone": "formula_band",
+          "desc": "Chain rule applied: derivative = ln(2)\u00b72^t"
+        },
+        {
+          "kind": "text",
+          "zone": "diagram_right",
+          "desc": "Calculator confirmation: ln(2) = 0.6931..."
+        }
+      ],
+      "transition": "Equation rewrites in place; ln(2) label replaces mystery constant and gets highlighted",
+      "narration_gist": "Writing 2^t as e^{ln(2)\u00b7t} and applying the chain rule shows the mystery constant is precisely ln(2)\u2014the natural log answers the question 'e to the what equals 2?'"
+    },
+    {
+      "beat": "anchor",
+      "purpose": "Generalize to all proportional-growth phenomena and cement the e^{ct} convention",
+      "on_screen": [
+        {
+          "kind": "text",
+          "zone": "title_band",
+          "desc": "General rule: d(a^t)/dt = a^t \u00b7 ln(a)"
+        },
+        {
+          "kind": "text",
+          "zone": "diagram_left",
+          "desc": "ODE: d\u0394T/dt = -k\u0394T with cooling curve graph"
+        },
+        {
+          "kind": "text",
+          "zone": "diagram_right",
+          "desc": "dM/dt = rM for invested money, solution e^{rt}"
+        }
+      ],
+      "transition": "Real-world examples appear side by side; e^{ct} form is shown as the natural writing convention",
+      "narration_gist": "Whenever a quantity's rate of change is proportional to itself, it takes the form e^{ct}, and c is exactly that proportionality constant\u2014making e the natural language for all exponential growth."
+    }
+  ],
+  "lessons": [
+    "Open by naming an explicit gap from prior content so viewers feel they are completing something unfinished.",
+    "Anchor abstract functions in a physical metaphor before touching any algebra, so the manipulation has motivational grounding.",
+    "Use a staged false-then-corrected claim (derivative equals itself) to make precision feel earned rather than imposed.",
+    "Isolate the part of an expression that 'does the interesting thing' visually\u2014box or brace it\u2014before explaining why it matters.",
+    "Let numerics do persuasion before algebra: show a calculator converging to a mystery constant so the viewer already believes it before the proof.",
+    "Pair every algebraic resolution with a visual restatement (the self-slope graph) so viewers have two independent mental hooks for the same idea.",
+    "End with side-by-side real-world applications in split zones to show the same structure recurring, transforming the lesson from a trick into a universal principle."
+  ],
+  "slug": "eulers-number",
+  "tags": "e euler exponential growth natural log derivative compound"
+}

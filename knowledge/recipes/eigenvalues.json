@@ -1,0 +1,256 @@
+{
+  "title": "Eigenvectors and Eigenvalues",
+  "hook": "Opens by naming the exact student anxieties ('Why are we doing this?' / 'What does this actually mean?') via animated pi-creature classroom, making the video feel like a direct response to a felt need.",
+  "scenes": [
+    {
+      "beat": "hook",
+      "purpose": "Validate student confusion and reframe the real obstacle as missing prerequisites, not the topic itself",
+      "on_screen": [
+        {
+          "kind": "text",
+          "zone": "title_band",
+          "desc": "Title: Eigenvectors and Eigenvalues"
+        },
+        {
+          "kind": "shape",
+          "zone": "stage",
+          "desc": "Animated pi-creature classroom with confused/tired/sassy students"
+        },
+        {
+          "kind": "text",
+          "zone": "stage",
+          "desc": "Student speech bubbles: 'Why are we doing this?' / 'What does this actually mean?'"
+        },
+        {
+          "kind": "shape",
+          "zone": "formula_band",
+          "desc": "det(A - \u03bbI) = 0 equation in teacher speech bubble"
+        }
+      ],
+      "transition": "Classroom scene fades; prerequisite grid appears",
+      "narration_gist": "Students find eigenstuffs confusing not because the topic is hard, but because their foundation in prior concepts is shaky."
+    },
+    {
+      "beat": "build",
+      "purpose": "Name the four prerequisite concepts visually so the viewer knows what mental toolkit is needed",
+      "on_screen": [
+        {
+          "kind": "text",
+          "zone": "title_band",
+          "desc": "Header: Many prerequisites"
+        },
+        {
+          "kind": "shape",
+          "zone": "stage",
+          "desc": "2\u00d72 grid of rectangles labeled: Linear transformations, Determinants, Linear systems, Change of basis"
+        }
+      ],
+      "transition": "Grid fades; grid plane and example transformation animate in",
+      "narration_gist": "You need solid visual understanding of linear transformations, determinants, linear systems, and change of basis before eigenvectors click."
+    },
+    {
+      "beat": "build",
+      "purpose": "Show concretely what it means for a vector to stay on its own span under a transformation",
+      "on_screen": [
+        {
+          "kind": "plot",
+          "zone": "stage",
+          "desc": "Animated grid undergoing linear transformation with matrix [[3,0],[1,2]]"
+        },
+        {
+          "kind": "shape",
+          "zone": "stage",
+          "desc": "A vector and its span line (Maroon) before and after transform"
+        },
+        {
+          "kind": "text",
+          "zone": "stage",
+          "desc": "Label: 'Vector gets knocked off Span' or 'Vector remains on its own span'"
+        },
+        {
+          "kind": "shape",
+          "zone": "title_band",
+          "desc": "Matrix [[3,0],[1,2]] displayed top-left"
+        }
+      ],
+      "transition": "Same grid kept; new vectors highlighted to show eigenvector cases",
+      "narration_gist": "Most vectors rotate off their span, but special eigenvectors only get stretched or squished, staying on the line they define."
+    },
+    {
+      "beat": "build",
+      "purpose": "Name eigenvectors and eigenvalues and show both eigenspaces of the example matrix",
+      "on_screen": [
+        {
+          "kind": "plot",
+          "zone": "stage",
+          "desc": "Full set of x-axis vectors (yellow) and diagonal-line vectors (maroon) displayed after transformation"
+        },
+        {
+          "kind": "text",
+          "zone": "diagram_left",
+          "desc": "Label: 'Eigenvectors \u2014 Stretched by 3' on x-axis"
+        },
+        {
+          "kind": "text",
+          "zone": "diagram_right",
+          "desc": "Label: 'Eigenvectors \u2014 Stretched by 2' on diagonal"
+        },
+        {
+          "kind": "text",
+          "zone": "formula_band",
+          "desc": "Eigenvalue labels: 'with eigenvalue 3' and 'with eigenvalue 2'"
+        }
+      ],
+      "transition": "Eigenspace labels stay; scene cuts to 3D rotation teaser then returns to symbolic setup",
+      "narration_gist": "These special vectors are eigenvectors; the scalar factor by which each is stretched is its eigenvalue."
+    },
+    {
+      "beat": "anchor",
+      "purpose": "Translate the geometric idea into the symbolic equation Av = \u03bbv and expose the core algebraic manipulation",
+      "on_screen": [
+        {
+          "kind": "text",
+          "zone": "stage",
+          "desc": "Large equation: A\u00b7v = \u03bb\u00b7v with A, v, \u03bb labeled via braces"
+        },
+        {
+          "kind": "text",
+          "zone": "diagram_left",
+          "desc": "Brace label: 'Matrix-vector multiplication' under left side"
+        },
+        {
+          "kind": "text",
+          "zone": "diagram_right",
+          "desc": "Brace label: 'Scalar multiplication' under right side"
+        }
+      ],
+      "transition": "Braces fade; right side is rewritten as matrix multiplication",
+      "narration_gist": "The eigenvector equation says matrix multiplication equals scalar multiplication; we need to reconcile the two types."
+    },
+    {
+      "beat": "build",
+      "purpose": "Derive the determinant condition by showing why (A \u2212 \u03bbI) must squish space",
+      "on_screen": [
+        {
+          "kind": "text",
+          "zone": "stage",
+          "desc": "Equation chain: Av = \u03bbv \u2192 (A \u2212 \u03bbI)v = 0 \u2192 det(A \u2212 \u03bbI) = 0"
+        },
+        {
+          "kind": "shape",
+          "zone": "diagram_right",
+          "desc": "Sample matrix with \u03bb subtracted from diagonal entries"
+        },
+        {
+          "kind": "text",
+          "zone": "formula_band",
+          "desc": "det(A \u2212 \u03bbI) = 0 enlarged and centered"
+        }
+      ],
+      "transition": "Equation highlighted and isolated; interactive \u03bb-tweak animation loads",
+      "narration_gist": "Rearranging forces det(A \u2212 \u03bbI) = 0 because a non-zero solution for v requires the transformation to squish space."
+    },
+    {
+      "beat": "payoff",
+      "purpose": "Make the determinant condition visceral by animating the grid collapsing as \u03bb is tuned to the eigenvalue",
+      "on_screen": [
+        {
+          "kind": "plot",
+          "zone": "stage",
+          "desc": "Animated grid squishing as \u03bb dial changes from 0 to 3"
+        },
+        {
+          "kind": "shape",
+          "zone": "title_band",
+          "desc": "Matrix (A \u2212 \u03bbI) with live decimal \u03bb values on diagonal"
+        },
+        {
+          "kind": "text",
+          "zone": "formula_band",
+          "desc": "Determinant readout changing in real time, hitting 0 at sweet spot"
+        }
+      ],
+      "transition": "Grid restored; worked example for \u03bb=2 and eigenvector computation shown",
+      "narration_gist": "Tweaking \u03bb until the determinant hits zero is the sweet spot \u2014 that \u03bb is an eigenvalue and the collapsed space reveals the eigenvector."
+    },
+    {
+      "beat": "twist",
+      "purpose": "Show edge cases: no real eigenvectors (90\u00b0 rotation), repeated eigenvalue with a full plane of eigenvectors (scaling)",
+      "on_screen": [
+        {
+          "kind": "plot",
+          "zone": "diagram_left",
+          "desc": "90\u00b0 rotation grid \u2014 every vector rotates off its span"
+        },
+        {
+          "kind": "text",
+          "zone": "diagram_left",
+          "desc": "Polynomial \u03bb\u00b2+1=0, roots \u00b1i (no real eigenvectors)"
+        },
+        {
+          "kind": "plot",
+          "zone": "diagram_right",
+          "desc": "Uniform 2\u00d7 scaling grid \u2014 every vector is an eigenvector"
+        },
+        {
+          "kind": "text",
+          "zone": "diagram_right",
+          "desc": "Shear matrix shown with only x-axis eigenvectors, \u03bb=1 only root"
+        }
+      ],
+      "transition": "Counter-examples fade; eigenbasis concept introduced",
+      "narration_gist": "Some transformations have no real eigenvectors; others have a full plane \u2014 both are illuminated by the determinant equation."
+    },
+    {
+      "beat": "payoff",
+      "purpose": "Introduce eigenbasis: show that using eigenvectors as basis vectors diagonalizes the matrix and makes repeated multiplication trivial",
+      "on_screen": [
+        {
+          "kind": "plot",
+          "zone": "stage",
+          "desc": "Grid shown in eigenvector coordinate system; transformation becomes diagonal"
+        },
+        {
+          "kind": "shape",
+          "zone": "diagram_left",
+          "desc": "Change-of-basis sandwich: C\u207b\u00b9AC displayed as diagonal matrix with eigenvalues"
+        },
+        {
+          "kind": "text",
+          "zone": "formula_band",
+          "desc": "Diagonal matrix [[\u22121,0],[0,2]] with eigenvalues highlighted on diagonal"
+        }
+      ],
+      "transition": "Morty character poses the 100th-power problem as a closing challenge",
+      "narration_gist": "Changing to an eigenbasis turns the matrix diagonal, making operations like computing the 100th power straightforward."
+    },
+    {
+      "beat": "anchor",
+      "purpose": "Close with a practical puzzle prompt and tease the next topic",
+      "on_screen": [
+        {
+          "kind": "text",
+          "zone": "stage",
+          "desc": "Puzzle prompt left on screen for viewer"
+        },
+        {
+          "kind": "text",
+          "zone": "conclusion_band",
+          "desc": "Next video teaser: Abstract vector spaces"
+        }
+      ],
+      "transition": "End card",
+      "narration_gist": "An optional puzzle lets viewers apply eigenbasis thinking; the series continues with abstract vector spaces."
+    }
+  ],
+  "lessons": [
+    "Open by voicing the audience's own frustrations before explaining anything \u2014 it earns trust and frames the entire lesson.",
+    "Show the prerequisite map visually before diving in, so viewers can self-diagnose their own gaps instead of feeling globally lost.",
+    "Introduce a concept geometrically first, then name it, so the label arrives as a reward rather than a demand to memorize.",
+    "Use a real-time parameter animation (the \u03bb dial) to let viewers see a continuous process rather than just before-and-after snapshots.",
+    "Place counter-examples (rotation with no eigenvectors, scaling with infinite eigenvectors) immediately after the main definition to stress-test and deepen understanding.",
+    "Reserve the most powerful payoff scene (eigenbasis diagonalization) for late in the arc, after the viewer has earned the intuition needed to appreciate it."
+  ],
+  "slug": "eigenvalues",
+  "tags": "eigenvalue eigenvector matrix transformation linear algebra determinant"
+}

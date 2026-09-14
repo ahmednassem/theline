@@ -1,0 +1,195 @@
+{
+  "title": "How Euler Wrote Pi (3Blue1Brown Pi Day 2018)",
+  "hook": "Opens with two animated characters screaming competing circle constants at each other, immediately dramatizing a dry notational dispute as a personality clash.",
+  "scenes": [
+    {
+      "beat": "hook",
+      "purpose": "Frame the pi-vs-tau debate as already settled, then pivot to a more interesting historical question",
+      "on_screen": [
+        {
+          "kind": "shape",
+          "zone": "diagram_left",
+          "desc": "Randolph pi-creature shouting '3.1415...' in angry speech bubble"
+        },
+        {
+          "kind": "shape",
+          "zone": "diagram_right",
+          "desc": "Tau-creature shouting '6.2831...' in angry speech bubble"
+        },
+        {
+          "kind": "plot",
+          "zone": "stage",
+          "desc": "Rotating radius with live decimal tracking circumference fraction"
+        }
+      ],
+      "transition": "Creatures removed; bare circle diagram kept as evidence",
+      "narration_gist": "Everyone knows the tau debate \u2014 I'm not here to rehash it, I want to talk about the historical moment pi became standard."
+    },
+    {
+      "beat": "build",
+      "purpose": "Introduce primary sources and the Switzerland correspondent as credibility anchor",
+      "on_screen": [
+        {
+          "kind": "shape",
+          "zone": "diagram_left",
+          "desc": "Portrait photo of Euler (Handmann painting)"
+        },
+        {
+          "kind": "text",
+          "zone": "diagram_right",
+          "desc": "Euler manuscript image faded, green highlight bar over key line"
+        },
+        {
+          "kind": "text",
+          "zone": "formula_band",
+          "desc": "Quote: 'Let \u03c0 be the circumference of a circle whose radius = 1'"
+        }
+      ],
+      "transition": "Photos fade in over blank stage; quote materializes beneath image",
+      "narration_gist": "Euler himself used pi to mean 6.28 \u2014 likely borrowing \u03c0 as 'p for perimeter' \u2014 so who's the villain who locked in 3.14?"
+    },
+    {
+      "beat": "twist",
+      "purpose": "Reveal the villain is also Euler, subverting the hero/villain framing just established",
+      "on_screen": [
+        {
+          "kind": "shape",
+          "zone": "diagram_left",
+          "desc": "Clear Euler portrait labeled 'Used 6.2831...' in green"
+        },
+        {
+          "kind": "shape",
+          "zone": "diagram_right",
+          "desc": "Pixelated then revealed same Euler portrait labeled 'Used 3.1415...' in red"
+        }
+      ],
+      "transition": "Pixelated image dissolves to reveal identical face; villain label appears",
+      "narration_gist": "The 1748 calculus book that spread \u03c0 = 3.14 across Europe was also written by Euler."
+    },
+    {
+      "beat": "build",
+      "purpose": "Show the actual book page and its exact wording to ground the claim in evidence",
+      "on_screen": [
+        {
+          "kind": "shape",
+          "zone": "diagram_left",
+          "desc": "Facsimile page of Euler's Introductio, left half of screen"
+        },
+        {
+          "kind": "text",
+          "zone": "diagram_right",
+          "desc": "Highlighted quote with 'semicircumference', '3.14159', and '\u03c0' in green"
+        },
+        {
+          "kind": "plot",
+          "zone": "formula_band",
+          "desc": "Circle animating with decimal ticking to \u03c0 value, then line unwrapping"
+        }
+      ],
+      "transition": "Book page held left; animated circle diagram builds on right beneath quote",
+      "narration_gist": "At the start of Chapter 8 Euler writes the semicircumference of a unit circle and says 'for brevity I will write \u03c0.'"
+    },
+    {
+      "beat": "build",
+      "purpose": "Extend the twist: Euler also used \u03c0 for a quarter-turn, showing it was context-dependent like \u03b8",
+      "on_screen": [
+        {
+          "kind": "plot",
+          "zone": "stage",
+          "desc": "Circle with radius swept to quarter turn, arc highlighted"
+        },
+        {
+          "kind": "text",
+          "zone": "diagram_right",
+          "desc": "Labels '\u03c0/2' and '\u03c4/4' stacked near arc endpoint"
+        },
+        {
+          "kind": "plot",
+          "zone": "diagram_left",
+          "desc": "Number plane with radius rotating through several angles, \u03b8 label tracking"
+        }
+      ],
+      "transition": "Quarter-circle diagram kept; number plane fades in alongside for analogy",
+      "narration_gist": "Euler used \u03c0 the way we use \u03b8 \u2014 as whichever circle constant was most convenient for the problem at hand, not a fixed standard."
+    },
+    {
+      "beat": "build",
+      "purpose": "Establish Euler's staggering output to explain why he didn't fixate on notation",
+      "on_screen": [
+        {
+          "kind": "text",
+          "zone": "stage",
+          "desc": "Scrolling list of ten 'Euler's formula / Euler's theorem' entries in different fields"
+        },
+        {
+          "kind": "shape",
+          "zone": "diagram_left",
+          "desc": "Euler portrait with thought bubble"
+        },
+        {
+          "kind": "text",
+          "zone": "diagram_right",
+          "desc": "Thought bubble containing Basel problem series, cross over pi-vs-tau question"
+        }
+      ],
+      "transition": "List fades; portrait with thought bubble replaces it",
+      "narration_gist": "Euler wrote 800 pages of dense math per year \u2014 his mind was on solving problems, not debating which circle constant is fundamental."
+    },
+    {
+      "beat": "payoff",
+      "purpose": "Deliver the core lesson: context determines the right convention, not abstract principle",
+      "on_screen": [
+        {
+          "kind": "shape",
+          "zone": "diagram_left",
+          "desc": "Pi-creature looking sassy beside competing formula pairs (sum = \u22121/12 vs. diverges, etc.)"
+        },
+        {
+          "kind": "text",
+          "zone": "stage",
+          "desc": "Title 'Which is right?' above pairs of contradictory-seeming math statements"
+        },
+        {
+          "kind": "text",
+          "zone": "formula_band",
+          "desc": "Pi-creature in shruggie pose as final pair appears"
+        }
+      ],
+      "transition": "Debate pairs stack upward as new ones fade in from below; pi-creature emotion shifts each time",
+      "narration_gist": "Fixating on which convention is objectively correct misses the point \u2014 focus on specific problems, and the right framing will follow from context."
+    },
+    {
+      "beat": "anchor",
+      "purpose": "Close with a practical punchline that redirects from meta-debate to actual mathematics",
+      "on_screen": [
+        {
+          "kind": "shape",
+          "zone": "diagram_left",
+          "desc": "Tau-creature angry, demanding June 28th celebration"
+        },
+        {
+          "kind": "shape",
+          "zone": "diagram_right",
+          "desc": "Pi-creature responding with Wallis product formula for \u03c0/2"
+        },
+        {
+          "kind": "text",
+          "zone": "title_band",
+          "desc": "Title: 'Happy \u03c0 day!'"
+        }
+      ],
+      "transition": "Tau's angry bubble replaced by pi's math question; tau shifts to pondering",
+      "narration_gist": "Next time someone says we should celebrate on 6/28, see how fast you can change the subject to actual math."
+    }
+  ],
+  "lessons": [
+    "Open with a character conflict to dramatize an abstract disagreement before a single equation appears.",
+    "Stage a twist by withholding the punchline identity until after the audience has committed to a hero/villain frame \u2014 then reveal both roles belong to the same person.",
+    "Anchor historical claims with a visible primary-source image held in one half of the screen while the interpretation builds in the other half.",
+    "Use a live animated diagram (rotating radius with tracking decimal) to make an abstract constant feel like a measurable quantity rather than a symbol.",
+    "Let a character's emotional state (pi-creature's shruggie, pondering, sassy) pace the philosophical argument so the viewer feels the shift in register, not just reads it.",
+    "End not with a summary slide but with a scene that models the desired behavior \u2014 redirect from meta-debate to an actual problem \u2014 so the lesson is enacted, not stated."
+  ],
+  "slug": "pi-was-628",
+  "tags": "pi tau circle radians circumference diameter ratio"
+}

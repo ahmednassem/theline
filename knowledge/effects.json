@@ -1,0 +1,50 @@
+[
+  {
+    "name": "term-cancel",
+    "how": "emphasize the vanishing terms (highlight color), then fade them, then write the simplified result below \u2014 communicates algebraic reduction as a visible event, not a hidden step"
+  },
+  {
+    "name": "reveal-answer-first",
+    "how": "write the final result centered and large, pause, then fade it to a corner while the proof elements are drawn in \u2014 signals 'we know where we are going' before the journey begins"
+  },
+  {
+    "name": "invariant-banner",
+    "how": "write a labeled equation (e.g. 'brightness = \u03c0\u00b2/4') at a fixed top or bottom position, pause to let it register, and leave it on screen untouched through all subsequent draw operations \u2014 holds the preserved quantity in peripheral view"
+  },
+  {
+    "name": "zone-split",
+    "how": "draw a vertical line dividing the stage, plot a diagram on the left and write its algebraic counterpart on the right, keeping both visible simultaneously \u2014 lets geometry and formula confirm each other without switching scenes"
+  },
+  {
+    "name": "nested-reference",
+    "how": "draw a small circle, pause, then plot a larger circle around it; when the outer circle reaches limiting scale replace it with a line \u2014 shows a geometric limit as a sequence of concrete draw operations rather than an abstract statement"
+  },
+  {
+    "name": "label-then-drop",
+    "how": "write a term label with an arrow pointing into a formula, pause, then fade the label while leaving the formula's color unchanged \u2014 names a part exactly once, then trusts persistent color to carry meaning forward"
+  },
+  {
+    "name": "false-cross-replace",
+    "how": "write the incorrect claim, draw an X line through it, then replace it with the corrected version in the same position \u2014 makes the distinction spatial and immediate rather than verbal"
+  },
+  {
+    "name": "closing-loop",
+    "how": "fade all current elements, redraw the opening object or question from the first scene, then write new vocabulary or result beside it \u2014 gives the viewer explicit conceptual closure by returning to where they started"
+  },
+  {
+    "name": "step-path-walk",
+    "how": "draw the first vector or segment, pause, then draw the next segment starting from its endpoint, adding an arrow at each joint \u2014 turns coordinate addition into felt, sequential movement rather than a static sum"
+  },
+  {
+    "name": "emphasis-isolate",
+    "how": "fade all elements except one target, emphasize that element (thicken or pulse via emphasize op), write a brace or label beside it, pause \u2014 pulls one factor out of visual noise so the audience focuses before the explanation begins"
+  },
+  {
+    "name": "numeric-converge",
+    "how": "write a decimal approximation, replace it with a closer one, replace again, then replace with the exact symbolic constant highlighted \u2014 lets numbers do persuasion before the algebraic proof arrives"
+  },
+  {
+    "name": "mini-top-band",
+    "how": "draw scaled-down copies of the main diagram in a row along the top edge with vertical separator lines, leaving the main stage free \u2014 keeps the global structure visible while the detail is being built below"
+  }
+]

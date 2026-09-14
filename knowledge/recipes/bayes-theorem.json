@@ -1,0 +1,223 @@
+{
+  "title": "Bayes' Theorem",
+  "hook": "A treasure-hunt story and a Nobel-Prize-winning psychological puzzle are used to frame the formula as urgently practical before any math appears.",
+  "scenes": [
+    {
+      "beat": "hook",
+      "purpose": "Establish stakes and promise three levels of understanding, tackled in reverse order",
+      "on_screen": [
+        {
+          "kind": "text",
+          "zone": "title_band",
+          "desc": "Levels of Understanding list with three nested bubble icons in gradient green\u2192red"
+        },
+        {
+          "kind": "shape",
+          "zone": "stage",
+          "desc": "Bayes formula tucked in corner, Pi-creature reacting"
+        },
+        {
+          "kind": "text",
+          "zone": "diagram_left",
+          "desc": "Science / robot / gold-bar icons representing applications"
+        }
+      ],
+      "transition": "Formula shrinks to corner; levels list fades; Steve character appears upper-right",
+      "narration_gist": "Before dissecting the formula, we tackle its usefulness first by meeting Steve."
+    },
+    {
+      "beat": "build",
+      "purpose": "Introduce the Steve description and surface the intuitive (wrong) snap judgment",
+      "on_screen": [
+        {
+          "kind": "shape",
+          "zone": "diagram_right",
+          "desc": "Steve SVG figure with name label"
+        },
+        {
+          "kind": "text",
+          "zone": "diagram_left",
+          "desc": "Personality description paragraph with 'meek and tidy soul' highlighted yellow"
+        },
+        {
+          "kind": "plot",
+          "zone": "formula_band",
+          "desc": "Probability bar animating between Librarian and Farmer ends"
+        }
+      ],
+      "transition": "Description fades; bar and Steve remain as Kahneman/Tversky photos slide in",
+      "narration_gist": "Most people say Steve is more likely a librarian because the description matches the stereotype."
+    },
+    {
+      "beat": "build",
+      "purpose": "Introduce the missing prior \u2014 the farmer-to-librarian ratio \u2014 as the crux of the error",
+      "on_screen": [
+        {
+          "kind": "shape",
+          "zone": "diagram_left",
+          "desc": "One Librarian figure next to 20 Farmer figures arranged in a row"
+        },
+        {
+          "kind": "shape",
+          "zone": "diagram_right",
+          "desc": "Brace over farmers labeled '20', brace over librarian labeled '1'"
+        },
+        {
+          "kind": "text",
+          "zone": "title_band",
+          "desc": "Kahneman and Tversky portrait photos (then fade out)"
+        }
+      ],
+      "transition": "Row of people shrinks into a bounding rectangle; colored sub-rectangles overlay it",
+      "narration_gist": "The 20-to-1 ratio of farmers to librarians is the prior that people ignore."
+    },
+    {
+      "beat": "build",
+      "purpose": "Work through the representative-sample calculation that secretly IS Bayes' theorem",
+      "on_screen": [
+        {
+          "kind": "shape",
+          "zone": "stage",
+          "desc": "Big rectangle split left (librarians) / right (farmers); colored bands show who fits description"
+        },
+        {
+          "kind": "text",
+          "zone": "formula_band",
+          "desc": "Equation P(Librarian | description) = 4 / (4+20) \u2248 16.7%"
+        },
+        {
+          "kind": "shape",
+          "zone": "diagram_left",
+          "desc": "Brace tracking count of matching librarians (4) and farmers (20)"
+        }
+      ],
+      "transition": "People figures fade; equation persists; prior-label arrow slides in above fraction",
+      "narration_gist": "Even though librarians are four times more likely to fit the description, there are so many more farmers that only 16.7% of matches are librarians."
+    },
+    {
+      "beat": "anchor",
+      "purpose": "Name the formula parts \u2014 prior, likelihood, posterior \u2014 and crystallise the mantra",
+      "on_screen": [
+        {
+          "kind": "text",
+          "zone": "title_band",
+          "desc": "Labelled call-outs: 'Prior', 'Likelihood', 'P(E|\u00acH)' with color-coded arrows"
+        },
+        {
+          "kind": "text",
+          "zone": "formula_band",
+          "desc": "Expanded Bayes formula with numerator and denominator terms highlighted"
+        },
+        {
+          "kind": "text",
+          "zone": "conclusion_band",
+          "desc": "Italic mantra: 'New evidence updates prior beliefs'"
+        }
+      ],
+      "transition": "Expanded denominator collapses to P(E); 'Posterior' label added; formula shrinks to top-left corner",
+      "narration_gist": "Each piece of the formula has a name \u2014 prior, likelihood, posterior \u2014 and together they formalise the updating of beliefs."
+    },
+    {
+      "beat": "payoff",
+      "purpose": "Show the geometric diagram as a re-derivable visual substitute for memorising the formula",
+      "on_screen": [
+        {
+          "kind": "shape",
+          "zone": "diagram_left",
+          "desc": "1\u00d71 square split vertically by prior P(H), left band yellow, right grey"
+        },
+        {
+          "kind": "shape",
+          "zone": "diagram_right",
+          "desc": "Restricted diagram with horizontal evidence bands; faded non-evidence strips"
+        },
+        {
+          "kind": "shape",
+          "zone": "stage",
+          "desc": "Geometric fraction: blue he_rect over (he_rect + nhe_rect) with line between"
+        }
+      ],
+      "transition": "Both diagrams animate prior and likelihood sliders; 'Write this more mathematically' label prompts return to formula",
+      "narration_gist": "The 1\u00d71 square diagram lets you re-derive Bayes' theorem on the fly using areas instead of counts."
+    },
+    {
+      "beat": "twist",
+      "purpose": "Linda problem \u2014 show how frequency framing eliminates a 85% error rate",
+      "on_screen": [
+        {
+          "kind": "text",
+          "zone": "stage",
+          "desc": "Linda description text with bank-teller options listed"
+        },
+        {
+          "kind": "text",
+          "zone": "formula_band",
+          "desc": "85% statistic highlighted in red, then rephrased as 'out of 100 people\u2026'"
+        },
+        {
+          "kind": "shape",
+          "zone": "diagram_right",
+          "desc": "Nested set diagram: bank tellers containing feminist bank-teller subset"
+        }
+      ],
+      "transition": "Linda panel fades; return to Bayes square diagram with slider animation",
+      "narration_gist": "Rephrasing from probability to frequency (40 out of 100) nearly eliminates the conjunction fallacy, showing that concrete counts activate better intuition."
+    },
+    {
+      "beat": "anchor",
+      "purpose": "Reframe probability as proportions/geometry and show the formula is 'obvious' once visualised",
+      "on_screen": [
+        {
+          "kind": "shape",
+          "zone": "stage",
+          "desc": "Bayes square with both evidence bands visible and labeled"
+        },
+        {
+          "kind": "text",
+          "zone": "formula_band",
+          "desc": "Full Bayes formula with geometric reading: width \u00d7 height = area of rectangle"
+        },
+        {
+          "kind": "text",
+          "zone": "conclusion_band",
+          "desc": "Text: 'Both sides look at cases where evidence is true'"
+        }
+      ],
+      "transition": "Formula and diagram persist side by side; debate about Steve context introduced via text overlay",
+      "narration_gist": "Probability is really just the math of proportions, and the diagram makes Bayes' theorem geometrically obvious."
+    },
+    {
+      "beat": "payoff",
+      "purpose": "Close with Steve revisited and the meta-lesson about reprogramming intuition",
+      "on_screen": [
+        {
+          "kind": "shape",
+          "zone": "diagram_right",
+          "desc": "Steve figure in corner"
+        },
+        {
+          "kind": "text",
+          "zone": "stage",
+          "desc": "Discussion: ambiguous context shifts the prior; stereotypes shift likelihoods"
+        },
+        {
+          "kind": "text",
+          "zone": "conclusion_band",
+          "desc": "Final mantra: 'Evidence should update beliefs, not determine them'"
+        }
+      ],
+      "transition": "All elements fade; clean frame holds the closing sentence",
+      "narration_gist": "Whether or not Kahneman's specific experiment convinces you, the core principle \u2014 evidence updates priors \u2014 is worth internalising deeply."
+    }
+  ],
+  "lessons": [
+    "Open with a concrete human story before introducing any notation; let stakes justify the abstraction.",
+    "Introduce the visual diagram before the algebraic formula so the formula reads as a description of something already understood.",
+    "Use color-coding that persists across every representation \u2014 diagram, formula, labels \u2014 so viewers track the same concept across transitions without re-reading.",
+    "Replace abstract percentages with counts ('4 out of 24') when building intuition, then generalise to proportions only after the concrete case is secure.",
+    "Keep one anchor object (the Bayes square) on screen across multiple scenes and animate its parameters so viewers see the formula as a living, adjustable thing rather than a static symbol.",
+    "Name every formula part exactly once, with a label and arrow, then drop the label and trust the established color to carry the meaning forward."
+  ],
+  "slug": "bayes-theorem",
+  "tags": "bayes probability evidence hypothesis update prior likelihood"
+}

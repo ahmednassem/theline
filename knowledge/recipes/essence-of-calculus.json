@@ -1,0 +1,246 @@
+{
+  "title": "Essence of Calculus, Chapter 1",
+  "hook": "The opening promises that viewers will feel they could have invented calculus themselves, reframing a daunting subject as a natural discovery waiting to happen.",
+  "scenes": [
+    {
+      "beat": "hook",
+      "purpose": "Establish the series and its radical promise: understanding over memorization",
+      "on_screen": [
+        {
+          "kind": "shape",
+          "zone": "stage",
+          "desc": "Video series strip with Chapter 1 highlighted in yellow"
+        },
+        {
+          "kind": "text",
+          "zone": "title_band",
+          "desc": "Welcome to Essence of Calculus"
+        },
+        {
+          "kind": "text",
+          "zone": "formula_band",
+          "desc": "List of calculus rules flying into video thumbnails"
+        }
+      ],
+      "transition": "Series strip fades; pi-creatures remain as interlocutors",
+      "narration_gist": "Rather than memorizing rules, the goal is for you to feel you could have invented calculus yourself."
+    },
+    {
+      "beat": "build",
+      "purpose": "Anchor the entire video in one concrete geometric question",
+      "on_screen": [
+        {
+          "kind": "shape",
+          "zone": "diagram_left",
+          "desc": "Blue filled circle with radius line labeled R=3"
+        },
+        {
+          "kind": "text",
+          "zone": "diagram_right",
+          "desc": "Formula: Area = \u03c0 R\u00b2"
+        },
+        {
+          "kind": "text",
+          "zone": "formula_band",
+          "desc": "Question marks ???"
+        }
+      ],
+      "transition": "Pi-creature dismissed; circle stays center stage",
+      "narration_gist": "We start with just you and a circle of radius 3, asking where the area formula actually comes from."
+    },
+    {
+      "beat": "build",
+      "purpose": "Introduce the key conceptual move: slicing into concentric rings",
+      "on_screen": [
+        {
+          "kind": "shape",
+          "zone": "diagram_left",
+          "desc": "Circle decomposed into rainbow concentric rings"
+        },
+        {
+          "kind": "shape",
+          "zone": "diagram_right",
+          "desc": "One isolated ring shifted right with radius label r"
+        },
+        {
+          "kind": "text",
+          "zone": "formula_band",
+          "desc": "Area ? label next to isolated ring"
+        }
+      ],
+      "transition": "All rings remain; one ring duplicated and moved to right half",
+      "narration_gist": "Slicing the circle into concentric rings respects its symmetry, and math rewards symmetry."
+    },
+    {
+      "beat": "build",
+      "purpose": "Approximate each ring as a rectangle and introduce dr notation",
+      "on_screen": [
+        {
+          "kind": "shape",
+          "zone": "diagram_right",
+          "desc": "Ring unwrapped into a near-rectangle"
+        },
+        {
+          "kind": "text",
+          "zone": "diagram_right",
+          "desc": "Width brace labeled 2\u03c0r, height brace labeled dr"
+        },
+        {
+          "kind": "text",
+          "zone": "formula_band",
+          "desc": "Area \u2248 2\u03c0r \u00b7 dr"
+        }
+      ],
+      "transition": "Isolated ring animates into straightened rectangle; original circle kept faint at left",
+      "narration_gist": "Unwrapping the ring gives a rectangle of width 2\u03c0r and thickness dr, so its area is approximately 2\u03c0r\u00b7dr."
+    },
+    {
+      "beat": "build",
+      "purpose": "Translate the sum of ring areas into a visual of rectangles under a graph",
+      "on_screen": [
+        {
+          "kind": "plot",
+          "zone": "stage",
+          "desc": "Coordinate axes with r on x-axis; stacked colored rectangles of width dr"
+        },
+        {
+          "kind": "plot",
+          "zone": "stage",
+          "desc": "Line graph of 2\u03c0r touching rectangle tops"
+        },
+        {
+          "kind": "text",
+          "zone": "formula_band",
+          "desc": "Area \u2248 2\u03c0r \u00b7 dr for each ring"
+        }
+      ],
+      "transition": "Rings from circle transform (path-arc animation) into upright rectangles on the graph",
+      "narration_gist": "Each ring's area becomes a thin rectangle on a graph, and together they approximate the area under the line 2\u03c0r."
+    },
+    {
+      "beat": "payoff",
+      "purpose": "Let dr shrink to zero, revealing the triangle whose area is exactly \u03c0R\u00b2",
+      "on_screen": [
+        {
+          "kind": "plot",
+          "zone": "stage",
+          "desc": "Increasingly thin Riemann rectangles converging under 2\u03c0r line"
+        },
+        {
+          "kind": "shape",
+          "zone": "stage",
+          "desc": "Triangle with base 3 and height 2\u03c0\u00b73 shaded under the line"
+        },
+        {
+          "kind": "text",
+          "zone": "formula_band",
+          "desc": "\u00bd \u00b7 base \u00b7 height = \u03c0 \u00b7 3\u00b2"
+        }
+      ],
+      "transition": "Rectangles visually merge into the triangle; formula written in corner",
+      "narration_gist": "As dr approaches zero the rectangles' total area becomes exactly the triangle under the graph, giving \u03c0R\u00b2."
+    },
+    {
+      "beat": "anchor",
+      "purpose": "Name the two big ideas just demonstrated: integrals and the area-under-curve reframe",
+      "on_screen": [
+        {
+          "kind": "text",
+          "zone": "stage",
+          "desc": "Hard problem \u2192 Sum of small values \u2192 Area under a graph"
+        },
+        {
+          "kind": "plot",
+          "zone": "diagram_right",
+          "desc": "Graph of 2\u03c0r with filled triangle"
+        },
+        {
+          "kind": "text",
+          "zone": "formula_band",
+          "desc": "General principle: any such sum = area under some graph"
+        }
+      ],
+      "transition": "Triangle kept; new text overlay summarizes the principle abstractly",
+      "narration_gist": "This strategy\u2014approximate with thin rectangles then let them shrink\u2014turns hard sum problems into area-under-graph problems, i.e., integrals."
+    },
+    {
+      "beat": "twist",
+      "purpose": "Introduce a harder case (parabola) to motivate derivatives as the inverse tool",
+      "on_screen": [
+        {
+          "kind": "plot",
+          "zone": "stage",
+          "desc": "Parabola x\u00b2 with shaded area from 0 to variable x"
+        },
+        {
+          "kind": "text",
+          "zone": "diagram_right",
+          "desc": "Mystery function A(x) label with brace"
+        },
+        {
+          "kind": "shape",
+          "zone": "stage",
+          "desc": "Thin sliver dA highlighted between x and x+dx"
+        }
+      ],
+      "transition": "Triangle/circle cleared; new axes and parabola drawn fresh",
+      "narration_gist": "Now imagine the area under x\u00b2 as a mystery function A(x); nudging x by dx produces a sliver dA \u2248 x\u00b2\u00b7dx."
+    },
+    {
+      "beat": "build",
+      "purpose": "Define derivative as the ratio dA/dx and show it equals the graph height",
+      "on_screen": [
+        {
+          "kind": "text",
+          "zone": "diagram_right",
+          "desc": "Equation dA/dx \u2248 x\u00b2"
+        },
+        {
+          "kind": "plot",
+          "zone": "stage",
+          "desc": "Parabola with sliver shrinking as dx\u21920"
+        },
+        {
+          "kind": "text",
+          "zone": "formula_band",
+          "desc": "Derivative: ratio of tiny output change to tiny input change"
+        }
+      ],
+      "transition": "Sliver animation loops with decreasing dx; equation stays fixed on right",
+      "narration_gist": "The ratio dA/dx approaches x\u00b2 as dx shrinks\u2014this ratio is called the derivative of A."
+    },
+    {
+      "beat": "payoff",
+      "purpose": "Name the Fundamental Theorem and close with the series promise",
+      "on_screen": [
+        {
+          "kind": "text",
+          "zone": "title_band",
+          "desc": "Fundamental Theorem of Calculus label"
+        },
+        {
+          "kind": "text",
+          "zone": "stage",
+          "desc": "Integrals \u2194 Derivatives (inverse relationship)"
+        },
+        {
+          "kind": "text",
+          "zone": "conclusion_band",
+          "desc": "Series roadmap: details on derivatives, integrals, and more ahead"
+        }
+      ],
+      "transition": "All prior visuals fade; clean text statement of the theorem",
+      "narration_gist": "The derivative of the area function gives back the original graph\u2014integrals and derivatives are inverses, the Fundamental Theorem of Calculus."
+    }
+  ],
+  "lessons": [
+    "Anchor an abstract topic in one concrete, familiar object before introducing any formalism.",
+    "Use physical transformation animations (unwrapping, sliding, morphing) to make algebraic approximations feel inevitable rather than imposed.",
+    "Keep a persistent visual artifact (the circle or the graph) on screen while layering new concepts on top of it, so viewers always know where they are.",
+    "Introduce notation only after the idea it names has already been seen visually, so the symbol feels like a label rather than a definition.",
+    "Stage the payoff as a visual surprise (rectangles collapsing into a triangle) so the result feels discovered, not just derived.",
+    "Close each major insight by naming the general principle it illustrates, then immediately gesture toward the next open question to sustain momentum."
+  ],
+  "slug": "essence-of-calculus",
+  "tags": "calculus integral derivative area circle pi limit slice"
+}

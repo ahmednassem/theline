@@ -1,0 +1,268 @@
+{
+  "title": "The Basel Problem \u2014 A Light-Based Proof",
+  "hook": "The video opens by posing a 90-year-unsolved sum and immediately revealing the shocking answer \u03c0\u00b2/6, then asking 'What is \u03c0 doing here?' to earn curiosity.",
+  "scenes": [
+    {
+      "beat": "hook",
+      "purpose": "Establish the mystery: a numerical series equals something involving \u03c0",
+      "on_screen": [
+        {
+          "kind": "text",
+          "zone": "title_band",
+          "desc": "Euler sum 1 + 1/4 + 1/9 + 1/16 + \u2026 = ?"
+        },
+        {
+          "kind": "plot",
+          "zone": "stage",
+          "desc": "Number line with colored cumulative-sum rectangles growing term by term"
+        },
+        {
+          "kind": "text",
+          "zone": "formula_band",
+          "desc": "Running decimal approximation with ??? beneath it"
+        },
+        {
+          "kind": "shape",
+          "zone": "diagram_right",
+          "desc": "Morty pi-creature looking confused"
+        }
+      ],
+      "transition": "Rectangles and number line persist; question marks replaced by \u03c0\u00b2/6 reveal",
+      "narration_gist": "This sum remained unsolved for 90 years until Euler found the shocking answer \u03c0\u00b2/6 \u2014 but what is \u03c0 doing here?"
+    },
+    {
+      "beat": "build",
+      "purpose": "Motivate the geometric approach by linking \u03c0 to circles and introducing light as the physical model",
+      "on_screen": [
+        {
+          "kind": "text",
+          "zone": "title_band",
+          "desc": "Basel sum with \u03c0\u00b2/6 answer shown"
+        },
+        {
+          "kind": "shape",
+          "zone": "stage",
+          "desc": "Web-of-mathematics dot graph with highlighted path leading to a circle"
+        },
+        {
+          "kind": "shape",
+          "zone": "diagram_right",
+          "desc": "Small circle with rotating radius tracing \u03c0"
+        },
+        {
+          "kind": "shape",
+          "zone": "conclusion_band",
+          "desc": "Glowing ambient light centered on the \u03c0 symbol"
+        }
+      ],
+      "transition": "Web fades; scene cuts to a number line with lighthouses",
+      "narration_gist": "Whenever \u03c0 appears there is a path back to circles, and for the Basel problem that path runs through light."
+    },
+    {
+      "beat": "build",
+      "purpose": "Physically encode the Basel series as lighthouses on a number line",
+      "on_screen": [
+        {
+          "kind": "plot",
+          "zone": "stage",
+          "desc": "Horizontal number line with lighthouse icons at integers 1\u20135+"
+        },
+        {
+          "kind": "shape",
+          "zone": "stage",
+          "desc": "Ambient light glow radiating from each lighthouse"
+        },
+        {
+          "kind": "shape",
+          "zone": "diagram_left",
+          "desc": "Morty at origin receiving light"
+        },
+        {
+          "kind": "shape",
+          "zone": "diagram_right",
+          "desc": "Thought-bubble light indicator showing cumulative brightness reading"
+        }
+      ],
+      "transition": "Lighthouses switch on one by one; indicator value climbs toward \u03c0\u00b2/6",
+      "narration_gist": "Place a lighthouse at every positive integer \u2014 the inverse-square law makes the total brightness equal exactly the Basel sum."
+    },
+    {
+      "beat": "build",
+      "purpose": "Introduce the inverse-square law and solidify why each lighthouse contributes 1/n\u00b2",
+      "on_screen": [
+        {
+          "kind": "shape",
+          "zone": "stage",
+          "desc": "Single light source with expanding concentric shells and copy-screens at distances 1, 2, 3"
+        },
+        {
+          "kind": "text",
+          "zone": "formula_band",
+          "desc": "Brightness \u221d 1/distance\u00b2 annotation"
+        },
+        {
+          "kind": "shape",
+          "zone": "diagram_right",
+          "desc": "3-D cone version showing solid-angle spreading"
+        },
+        {
+          "kind": "text",
+          "zone": "conclusion_band",
+          "desc": "Labels: 1\u00d7 screen, 4\u00d7 screen, 9\u00d7 screen at respective distances"
+        }
+      ],
+      "transition": "3-D scene dissolves back to 2-D lake geometry",
+      "narration_gist": "Because area grows as distance squared, brightness falls as 1/distance\u00b2 \u2014 that's the inverse-square law, and it's why lighthouses give us 1/n\u00b2."
+    },
+    {
+      "beat": "build",
+      "purpose": "Derive the Inverse Pythagorean Theorem as the key transformation tool",
+      "on_screen": [
+        {
+          "kind": "shape",
+          "zone": "stage",
+          "desc": "Right triangle with observer at C, lighthouse at H, new lighthouses at A and B on axes"
+        },
+        {
+          "kind": "text",
+          "zone": "formula_band",
+          "desc": "1/a\u00b2 + 1/b\u00b2 = 1/h\u00b2 labeled in matching colors"
+        },
+        {
+          "kind": "shape",
+          "zone": "diagram_right",
+          "desc": "Mini-triangle hypotenuse acting as a screen receiving identical light rays"
+        },
+        {
+          "kind": "text",
+          "zone": "title_band",
+          "desc": "'Inverse Pythagorean Theorem' title with surrounding box"
+        }
+      ],
+      "transition": "Triangle kept; circle geometry introduced around it",
+      "narration_gist": "One lighthouse at H can be split into two at A and B on perpendicular axes with the same total brightness \u2014 the Inverse Pythagorean Theorem."
+    },
+    {
+      "beat": "build",
+      "purpose": "Set up the circular lake construction and its initial brightness",
+      "on_screen": [
+        {
+          "kind": "shape",
+          "zone": "stage",
+          "desc": "Small circle (circumference 2) with observer at one end, single lighthouse directly opposite"
+        },
+        {
+          "kind": "text",
+          "zone": "formula_band",
+          "desc": "Brightness = \u03c0\u00b2/4 derived from diameter = 2/\u03c0"
+        },
+        {
+          "kind": "shape",
+          "zone": "diagram_right",
+          "desc": "Tangent line at top of small circle touching larger circle of circumference 4"
+        },
+        {
+          "kind": "text",
+          "zone": "conclusion_band",
+          "desc": "Two new lighthouses A and B marked on larger circle"
+        }
+      ],
+      "transition": "Small circle remains as reference; larger circle grows around it",
+      "narration_gist": "Standing opposite a lighthouse on a lake of circumference 2 gives brightness \u03c0\u00b2/4, and drawing a tangent splits that into two lighthouses on a double-sized circle."
+    },
+    {
+      "beat": "build",
+      "purpose": "Iterate the doubling process, showing lighthouses stay evenly spaced",
+      "on_screen": [
+        {
+          "kind": "shape",
+          "zone": "stage",
+          "desc": "Nested circles of circumference 2, 4, 8 with lighthouses migrating outward"
+        },
+        {
+          "kind": "shape",
+          "zone": "stage",
+          "desc": "Lines through circle centers marking right angles via inscribed-angle theorem"
+        },
+        {
+          "kind": "text",
+          "zone": "formula_band",
+          "desc": "Arc-spacing labels: 1, 2, 2, 2, 1 then all-2 at each step"
+        },
+        {
+          "kind": "text",
+          "zone": "conclusion_band",
+          "desc": "Total brightness = \u03c0\u00b2/4 annotation persists across steps"
+        }
+      ],
+      "transition": "Circles expand to infinite radius; circles flatten to a line",
+      "narration_gist": "Each doubling replaces every lighthouse with two evenly spaced ones on a bigger circle, keeping total brightness \u03c0\u00b2/4 at every stage."
+    },
+    {
+      "beat": "payoff",
+      "purpose": "Reveal the limiting infinite number line of odd-integer lighthouses summing to \u03c0\u00b2/4",
+      "on_screen": [
+        {
+          "kind": "plot",
+          "zone": "stage",
+          "desc": "Flat horizontal number line with lighthouses at all odd integers \u2026\u22125,\u22123,\u22121,1,3,5\u2026"
+        },
+        {
+          "kind": "text",
+          "zone": "formula_band",
+          "desc": "\u2211 1/n\u00b2 (odd n, both signs) = \u03c0\u00b2/4"
+        },
+        {
+          "kind": "shape",
+          "zone": "diagram_left",
+          "desc": "Observer dot at origin"
+        },
+        {
+          "kind": "text",
+          "zone": "conclusion_band",
+          "desc": "Connection label: 'infinite circle limit'"
+        }
+      ],
+      "transition": "Full line kept; algebra panel introduced to the right",
+      "narration_gist": "In the limit the circles become a line, and summing brightness over all odd integers gives \u03c0\u00b2/4 \u2014 the number line is a limit of ever-growing circles."
+    },
+    {
+      "beat": "anchor",
+      "purpose": "Bridge from odd-integer sum to the full Basel sum via scaling algebra",
+      "on_screen": [
+        {
+          "kind": "text",
+          "zone": "diagram_left",
+          "desc": "Sum over positive odd integers = \u03c0\u00b2/8"
+        },
+        {
+          "kind": "text",
+          "zone": "diagram_right",
+          "desc": "Missing even-integer sum = (1/4) \u00d7 total, shown as scaled copy of lighthouses"
+        },
+        {
+          "kind": "text",
+          "zone": "formula_band",
+          "desc": "Odds = (3/4) \u00d7 total  \u2192  total = (4/3) \u00d7 \u03c0\u00b2/8"
+        },
+        {
+          "kind": "text",
+          "zone": "conclusion_band",
+          "desc": "Final answer: \u03c0\u00b2/6 highlighted in yellow"
+        }
+      ],
+      "transition": "All elements fade; credit card for Ben Hambrecht appears",
+      "narration_gist": "Restricting to one side gives \u03c0\u00b2/8; the even terms are a quarter-scaled copy of the whole sum, so multiplying by 4/3 yields \u03c0\u00b2/6."
+    }
+  ],
+  "lessons": [
+    "Open with the answer before the proof so the audience spends the video understanding why, not just waiting to learn what.",
+    "Anchor abstract series to a physical model (light, area, distance) so the audience has an intuition to grab before any formula appears.",
+    "Introduce one reusable transformation rule (here: splitting a lighthouse into two) and let the rest of the proof be repetitive application of that rule, so complexity grows without cognitive load.",
+    "Keep a running 'invariant' label (brightness = \u03c0\u00b2/4) on screen through every transformation step so viewers always know what is being preserved.",
+    "Use nested geometry (circles inside circles) as an on-screen animation rather than a static diagram, letting the limiting process be visually obvious before it is stated in words.",
+    "Save the algebraic clean-up (odd\u2192all integers) for a distinct final scene so the geometric payoff lands cleanly before bookkeeping begins."
+  ],
+  "slug": "basel-problem",
+  "tags": "pi basel sum squares infinite series lighthouse inverse geometry"
+}

@@ -1,0 +1,235 @@
+{
+  "title": "The Essence of Calculus, Chapter 2: The Paradox of the Derivative",
+  "hook": "Opens by naming the oxymoron hidden inside the standard definition \u2014 'instantaneous rate of change' \u2014 before promising to show how calculus cleverly sidesteps it.",
+  "scenes": [
+    {
+      "beat": "hook",
+      "purpose": "Surface the paradox that drives the whole video",
+      "on_screen": [
+        {
+          "kind": "text",
+          "zone": "title_band",
+          "desc": "Phrase 'Instantaneous rate of change' enlarged"
+        },
+        {
+          "kind": "shape",
+          "zone": "stage",
+          "desc": "Animated clock ticking under 'change' (requires two moments)"
+        },
+        {
+          "kind": "shape",
+          "zone": "stage",
+          "desc": "Frozen clock under 'instantaneous' (single moment)"
+        },
+        {
+          "kind": "arrow",
+          "zone": "stage",
+          "desc": "Braces labeling each half of the phrase with contradictory descriptions"
+        }
+      ],
+      "transition": "Phrase extracted from student speech bubble, scaled up and centered; clocks fade after contradiction is established",
+      "narration_gist": "The phrase 'instantaneous rate of change' is an oxymoron \u2014 change needs two points in time, but instantaneous means one."
+    },
+    {
+      "beat": "build",
+      "purpose": "Establish the concrete physical scenario and its distance-vs-time graph",
+      "on_screen": [
+        {
+          "kind": "shape",
+          "zone": "stage",
+          "desc": "Car moving from point A to B along a horizontal line"
+        },
+        {
+          "kind": "plot",
+          "zone": "stage",
+          "desc": "Distance s(t) curve drawn in real time as car moves"
+        },
+        {
+          "kind": "text",
+          "zone": "stage",
+          "desc": "Axis labels: Time (seconds) horizontal, Distance (meters) vertical"
+        },
+        {
+          "kind": "text",
+          "zone": "stage",
+          "desc": "Label s(t) at end of curve"
+        }
+      ],
+      "transition": "Car and road rotate 90\u00b0 into the graph's y-axis; axes appear around them",
+      "narration_gist": "A car traveling 100 m in 10 s gives us a distance function s(t) whose slope encodes speed."
+    },
+    {
+      "beat": "build",
+      "purpose": "Show velocity graph and make the paradox concrete",
+      "on_screen": [
+        {
+          "kind": "plot",
+          "zone": "stage",
+          "desc": "s(t) distance curve (blue)"
+        },
+        {
+          "kind": "plot",
+          "zone": "stage",
+          "desc": "v(t) velocity bump curve (green) overlaid"
+        },
+        {
+          "kind": "shape",
+          "zone": "stage",
+          "desc": "Sliding rectangle highlighting one-second intervals to show slope changes"
+        },
+        {
+          "kind": "text",
+          "zone": "stage",
+          "desc": "meters/second label at steep region"
+        }
+      ],
+      "transition": "Velocity graph appears via ShowCreation; alternate distance curves transform in and out to show relationship is general",
+      "narration_gist": "The velocity curve is steeper where distance grows fast, but computing velocity seems to require two time points, not one."
+    },
+    {
+      "beat": "build",
+      "purpose": "Introduce ds/dt as the practical, real-world resolution",
+      "on_screen": [
+        {
+          "kind": "plot",
+          "zone": "stage",
+          "desc": "Zoomed-in region of s(t) near t=3"
+        },
+        {
+          "kind": "shape",
+          "zone": "diagram_left",
+          "desc": "dt horizontal segment (yellow) on time axis"
+        },
+        {
+          "kind": "shape",
+          "zone": "diagram_right",
+          "desc": "ds vertical segment (blue) on graph"
+        },
+        {
+          "kind": "text",
+          "zone": "formula_band",
+          "desc": "Formula ds/dt with color-coded numerator and denominator"
+        }
+      ],
+      "transition": "Zoom rectangle activates; ds and dt line segments grow from the graph point",
+      "narration_gist": "A speedometer sidesteps the paradox by measuring distance over a very small but nonzero dt, giving ds/dt as rise over run."
+    },
+    {
+      "beat": "build",
+      "purpose": "Define the true derivative as the limit of ds/dt as dt\u21920",
+      "on_screen": [
+        {
+          "kind": "plot",
+          "zone": "stage",
+          "desc": "s(t) graph with secant line between two close points"
+        },
+        {
+          "kind": "text",
+          "zone": "formula_band",
+          "desc": "ds/dt(t) = [s(t+dt)\u2212s(t)]/dt with brace 'dt\u21920'"
+        },
+        {
+          "kind": "text",
+          "zone": "stage",
+          "desc": "Notation: 'dt is NOT infinitely small, NOT 0'"
+        }
+      ],
+      "transition": "Secant line animates shrinking as dt decreases over 15 seconds, visually becoming a tangent line",
+      "narration_gist": "The derivative is not the ratio for any specific dt but what that ratio approaches as dt approaches zero \u2014 the tangent line slope."
+    },
+    {
+      "beat": "payoff",
+      "purpose": "Work through t\u00b3 example to show the limit collapses the mess into 3t\u00b2",
+      "on_screen": [
+        {
+          "kind": "plot",
+          "zone": "diagram_left",
+          "desc": "t\u00b3 graph with two dashed vertical lines at t=2 and t=2+dt"
+        },
+        {
+          "kind": "text",
+          "zone": "diagram_right",
+          "desc": "Expanded algebra: (2+dt)\u00b3 \u2212 2\u00b3 over dt, term by term"
+        },
+        {
+          "kind": "text",
+          "zone": "formula_band",
+          "desc": "Result after cancellation: 3(2)\u00b2 + terms with dt"
+        },
+        {
+          "kind": "text",
+          "zone": "conclusion_band",
+          "desc": "As dt\u21920: derivative = 3t\u00b2"
+        }
+      ],
+      "transition": "2\u00b3 terms highlighted red and removed; dt terms faded as dt\u21920; final clean result slides down",
+      "narration_gist": "Expanding (2+dt)\u00b3, the dt\u21920 limit wipes away all messy terms, leaving the beautifully simple answer 3t\u00b2."
+    },
+    {
+      "beat": "twist",
+      "purpose": "Reveal the paradox that remains: is the car moving at t=0?",
+      "on_screen": [
+        {
+          "kind": "plot",
+          "zone": "stage",
+          "desc": "t\u00b3 graph with flat tangent line at origin"
+        },
+        {
+          "kind": "text",
+          "zone": "stage",
+          "desc": "Question: 'At t=0, is the car moving?'"
+        },
+        {
+          "kind": "text",
+          "zone": "diagram_right",
+          "desc": "Derivative 3(0)\u00b2 = 0 m/s"
+        },
+        {
+          "kind": "shape",
+          "zone": "stage",
+          "desc": "Car sitting at origin, tangent line perfectly horizontal"
+        }
+      ],
+      "transition": "Tangent line sweeps from t=2 down to t=0, landing flat; car moved back to origin",
+      "narration_gist": "The derivative is 0 at t=0, suggesting the car isn't moving \u2014 yet it clearly starts moving, exposing the danger of reading 'instantaneous velocity' too literally."
+    },
+    {
+      "beat": "anchor",
+      "purpose": "Resolve the paradox with the correct conceptual framing",
+      "on_screen": [
+        {
+          "kind": "text",
+          "zone": "stage",
+          "desc": "Phrase 'Best constant approximation around a point'"
+        },
+        {
+          "kind": "shape",
+          "zone": "stage",
+          "desc": "Small circle drawn around the t=0 point on the graph"
+        },
+        {
+          "kind": "text",
+          "zone": "formula_band",
+          "desc": "Example: from 0 to 0.1 s, car moves 0.001 m \u2192 average 0.01 m/s"
+        },
+        {
+          "kind": "text",
+          "zone": "conclusion_band",
+          "desc": "Ratio\u21920 as dt\u21920; not static, just well-approximated by 0"
+        }
+      ],
+      "transition": "Paradox question fades; brace and label appear beneath derivative expression; tangent line wiggles to show it is an approximation, not a freeze-frame",
+      "narration_gist": "A derivative of 0 doesn't mean the car is frozen \u2014 it means the best constant speed approximation near that point is 0, and the paradox dissolves."
+    }
+  ],
+  "lessons": [
+    "Name the paradox or contradiction in the opening scene so the entire video feels like its resolution.",
+    "Use a physical object (car, clock) that the audience already understands to anchor abstract notation before introducing symbols.",
+    "Animate the limit process geometrically \u2014 shrink the secant toward the tangent over many seconds \u2014 so the idea is felt, not just stated.",
+    "Split the screen into diagram and formula zones simultaneously so viewers can watch algebra and geometry confirm each other in real time.",
+    "Cancel complexity on screen: highlight the terms that vanish, fade them, then let the clean result drop into the conclusion band so simplicity registers as a visual event.",
+    "Return to the opening paradox at the end with new vocabulary ('best constant approximation') so the viewer experiences genuine conceptual closure rather than just being told the answer."
+  ],
+  "slug": "derivatives",
+  "tags": "derivative slope velocity rate change tangent dt calculus paradox"
+}

@@ -1,0 +1,244 @@
+{
+  "title": "Exponential Growth and Epidemics (COVID-19)",
+  "hook": "Opens directly on the real COVID-19 case data plotted as an accelerating curve, letting the alarming shape speak before any explanation begins.",
+  "scenes": [
+    {
+      "beat": "hook",
+      "purpose": "Ground the abstract topic in urgent, real data before defining anything",
+      "on_screen": [
+        {
+          "kind": "plot",
+          "zone": "stage",
+          "desc": "Live dot-by-dot animation of COVID-19 case counts, y-axis rescaling twice as numbers overflow"
+        },
+        {
+          "kind": "text",
+          "zone": "title_band",
+          "desc": "Title: 'Recorded COVID-19 cases outside mainland China'"
+        },
+        {
+          "kind": "text",
+          "zone": "stage",
+          "desc": "Running integer counter next to moving dot showing current case count"
+        },
+        {
+          "kind": "arrow",
+          "zone": "stage",
+          "desc": "Pink arc lines with \u00d71.15\u20131.25 multiplier labels between successive dots"
+        }
+      ],
+      "transition": "Axes kept; multiplier labels fade out entering next scene",
+      "narration_gist": "The data for COVID-19 cases is shown growing day by day, with each step being roughly 1.15\u20131.25 times the previous."
+    },
+    {
+      "beat": "build",
+      "purpose": "Introduce the four questions that structure the whole video",
+      "on_screen": [
+        {
+          "kind": "text",
+          "zone": "stage",
+          "desc": "Four questions fading in one at a time: What is it? Where does it come from? What does it imply? When does it stop?"
+        }
+      ],
+      "transition": "Questions fade out downward in a lagged sweep; clean slate for the model",
+      "narration_gist": "Four questions frame the lesson: definition, origin, implication, and endpoint of exponential growth."
+    },
+    {
+      "beat": "build",
+      "purpose": "Show the mechanism\u2014infected people exposing neighbors\u2014before writing any equation",
+      "on_screen": [
+        {
+          "kind": "shape",
+          "zone": "stage",
+          "desc": "Grid of 150 Randolph pi-creatures; one turns sickly green as patient zero"
+        },
+        {
+          "kind": "shape",
+          "zone": "stage",
+          "desc": "Flash bursts radiating from infected figures each round"
+        },
+        {
+          "kind": "shape",
+          "zone": "stage",
+          "desc": "Newly infected creatures change color in staggered waves"
+        }
+      ],
+      "transition": "Simulation clears; equation variables appear at top",
+      "narration_gist": "A visual simulation shows each infected person exposing nearby neighbors, making it viscerally clear why existing cases drive new cases."
+    },
+    {
+      "beat": "build",
+      "purpose": "Formalize the mechanism into an equation, building it term by term",
+      "on_screen": [
+        {
+          "kind": "text",
+          "zone": "title_band",
+          "desc": "Three color-coded variable definitions: N (yellow), E (blue), p (teal)"
+        },
+        {
+          "kind": "text",
+          "zone": "stage",
+          "desc": "\u0394N_d = E\u00b7p\u00b7N_d built by TransformFromCopy of each variable label"
+        },
+        {
+          "kind": "text",
+          "zone": "formula_band",
+          "desc": "Factored form N_{d+1} = (1 + E\u00b7p)\u00b7N_d with brace showing '1.15'"
+        },
+        {
+          "kind": "text",
+          "zone": "stage",
+          "desc": "Closed-form N_d = (1+E\u00b7p)^d \u00b7 N_0 with arrow from factored form"
+        }
+      ],
+      "transition": "Equation group shifts left; EP factor gets red rectangle highlight kept on screen",
+      "narration_gist": "The daily change equals E\u00b7p\u00b7N, so tomorrow's total is just today's multiplied by a constant greater than one."
+    },
+    {
+      "beat": "build",
+      "purpose": "Make the exponential legible by switching to a log scale and fitting a line",
+      "on_screen": [
+        {
+          "kind": "plot",
+          "zone": "stage",
+          "desc": "Original dot data animating upward to log-spaced positions; y-axis relabels 10, 100, 1k \u2026 1B"
+        },
+        {
+          "kind": "text",
+          "zone": "stage",
+          "desc": "'Logarithmic scale' subtitle in teal"
+        },
+        {
+          "kind": "shape",
+          "zone": "stage",
+          "desc": "Teal regression line through the dots labeled '\u00d710 every 16 days'"
+        },
+        {
+          "kind": "text",
+          "zone": "formula_band",
+          "desc": "R\u00b2 value counting up to ~0.999 inside a highlighted box"
+        }
+      ],
+      "transition": "R\u00b2 box fades; camera zooms out to reveal extended x-axis",
+      "narration_gist": "On a log scale the data falls almost perfectly on a straight line, and linear regression confirms the fit is 'really freaking close.'"
+    },
+    {
+      "beat": "payoff",
+      "purpose": "Show the terrifying forward projection of the straight line extended in time",
+      "on_screen": [
+        {
+          "kind": "plot",
+          "zone": "stage",
+          "desc": "Regression line extended 90 more days on zoomed-out log axes"
+        },
+        {
+          "kind": "shape",
+          "zone": "stage",
+          "desc": "Expanding teal rectangles marking 30/47/64/81 days to 1M/10M/100M/1B"
+        },
+        {
+          "kind": "text",
+          "zone": "stage",
+          "desc": "Date labels (Apr 5, Apr 22, May 9, May 26) ticking up at each milestone"
+        }
+      ],
+      "transition": "Rectangle and label fade right; two hypothetical projected-dot paths appear then fade",
+      "narration_gist": "Extending the line predicts one million cases in 30 days, a billion in 81\u2014viscerally illustrating why the trend cannot continue."
+    },
+    {
+      "beat": "twist",
+      "purpose": "Introduce the logistic curve: exponential is just its early segment",
+      "on_screen": [
+        {
+          "kind": "plot",
+          "zone": "stage",
+          "desc": "S-shaped logistic curve drawn in yellow over a plain time axis"
+        },
+        {
+          "kind": "plot",
+          "zone": "stage",
+          "desc": "Red exponential curve overlaid on the early portion inside a teal shaded region"
+        },
+        {
+          "kind": "shape",
+          "zone": "stage",
+          "desc": "Inflection point dot with label; tangent line sweeping along the curve showing slope change"
+        },
+        {
+          "kind": "text",
+          "zone": "formula_band",
+          "desc": "ODE dN/dt = c(1 \u2212 N/pop)\u00b7N shown in upper right"
+        }
+      ],
+      "transition": "ODE fades; growth-factor fraction appears beside inflection point",
+      "narration_gist": "Every exponential is the opening of a logistic curve; the inflection point is where new daily cases peak and the growth factor drops to one."
+    },
+    {
+      "beat": "anchor",
+      "purpose": "Teach the growth-factor diagnostic: distinguish GF>1 from GF\u22481 in real numbers",
+      "on_screen": [
+        {
+          "kind": "text",
+          "zone": "diagram_left",
+          "desc": "Column of recent case totals with dates (Mar 3\u20136)"
+        },
+        {
+          "kind": "text",
+          "zone": "stage",
+          "desc": "Column of daily changes in green with curved arrows between totals"
+        },
+        {
+          "kind": "text",
+          "zone": "diagram_right",
+          "desc": "Growth-factor fractions (change_d / change_{d-1}) animating to show GF=1.15 vs GF=1.0"
+        },
+        {
+          "kind": "text",
+          "zone": "title_band",
+          "desc": "Section headers: Totals / Changes / Growth factors"
+        }
+      ],
+      "transition": "Table stays; new projection calculation slides in to the right",
+      "narration_gist": "A growth factor only slightly above 1 looks innocuous in the totals column but signals orders-of-magnitude growth still ahead."
+    },
+    {
+      "beat": "payoff",
+      "purpose": "Show dramatic sensitivity of outcome to small changes in the growth rate",
+      "on_screen": [
+        {
+          "kind": "text",
+          "zone": "stage",
+          "desc": "Equation (1.15)^61 \u00b7 21,000 = ~100 million counting up"
+        },
+        {
+          "kind": "text",
+          "zone": "stage",
+          "desc": "Equation (1.05)^61 \u00b7 21,000 = ~400,000 counting up below"
+        },
+        {
+          "kind": "text",
+          "zone": "formula_band",
+          "desc": "Animated decimal toggling between 1.15 and 1.05 next to 'E\u00b7p factor'"
+        },
+        {
+          "kind": "shape",
+          "zone": "conclusion_band",
+          "desc": "Mortimer character with speech bubble: 'The only thing to fear is the lack of fear itself'"
+        }
+      ],
+      "transition": "Final hold on both equations side by side with character visible",
+      "narration_gist": "Dropping the daily growth rate from 15% to 5% reduces a 61-day projection from 100 million to 400,000\u2014so collective worry is the lever."
+    }
+  ],
+  "lessons": [
+    "Lead with real, emotionally charged data before introducing any abstraction\u2014let the phenomenon earn the theory.",
+    "Use a physical simulation (creatures spreading infection) to build intuition for a mechanism before formalizing it as an equation.",
+    "Construct equations on screen term by term using TransformFromCopy of previously defined variables, so the formula feels discovered rather than imposed.",
+    "When data spans orders of magnitude, animate the rescaling to a log axis in-place so viewers experience the transformation rather than just seeing the result.",
+    "Zoom the camera out to extend a graph's time axis for projections, preserving context while revealing the frightening forward trajectory.",
+    "Place a comparative diagnostic table (totals vs. changes vs. growth factors) across left/center/right zones so each conceptual layer occupies its own column, making the relationship spatially legible.",
+    "End with a concrete numerical contrast\u2014same formula, two inputs, wildly different outputs\u2014so the practical stakes of the math land in a single closing image."
+  ],
+  "slug": "exponential-and-epidemics",
+  "tags": "exponential growth epidemic virus doubling rate logistic curve spread"
+}

@@ -1,0 +1,231 @@
+{
+  "title": "Prime Spirals and Dirichlet's Theorem",
+  "hook": "Opens by showing a visually stunning and mysterious spiral pattern of primes in polar coordinates \u2014 galaxies and rays with unexplained gaps \u2014 before revealing the puzzle.",
+  "scenes": [
+    {
+      "beat": "hook",
+      "purpose": "Establish the surprising visual mystery to be explained",
+      "on_screen": [
+        {
+          "kind": "plot",
+          "zone": "stage",
+          "desc": "prime spiral in polar coordinates zooming out to reveal galaxy arms and straight rays"
+        },
+        {
+          "kind": "text",
+          "zone": "title_band",
+          "desc": "implicit question: what is going on here?"
+        }
+      ],
+      "transition": "spiral appears, then zooms out twice to reveal two distinct patterns",
+      "narration_gist": "Plotting primes (p, p) in polar coordinates produces eerie galactic spirals and then straight rays with mysterious gaps \u2014 what's happening?"
+    },
+    {
+      "beat": "build",
+      "purpose": "Give viewers the coordinate system vocabulary needed to understand the diagram",
+      "on_screen": [
+        {
+          "kind": "plot",
+          "zone": "stage",
+          "desc": "polar grid with a movable point, r-line, and arc"
+        },
+        {
+          "kind": "text",
+          "zone": "formula_band",
+          "desc": "coordinate label (r, \u03b8) with color-coded r and \u03b8"
+        },
+        {
+          "kind": "shape",
+          "zone": "stage",
+          "desc": "arc sweeping to show \u03b8 in radians"
+        }
+      ],
+      "transition": "polar grid fades in over Cartesian plane; xy labels replaced by r and \u03b8 labels",
+      "narration_gist": "A quick refresher: polar coordinates use radius r and angle \u03b8 in radians, where \u03c0 is a half-turn and 2\u03c0 is full circle."
+    },
+    {
+      "beat": "build",
+      "purpose": "Show what the (n, n) plot looks like for all whole numbers before restricting to primes",
+      "on_screen": [
+        {
+          "kind": "plot",
+          "zone": "stage",
+          "desc": "dots for n=1 through ~25 with coordinate labels (n, n)"
+        },
+        {
+          "kind": "shape",
+          "zone": "stage",
+          "desc": "Archimedean spiral tracing through the dots"
+        },
+        {
+          "kind": "arrow",
+          "zone": "stage",
+          "desc": "r-line and arc animating one radian tick per step"
+        }
+      ],
+      "transition": "labeled dots appear one by one; spiral drawn through them; then non-primes fade to reveal prime-only subset",
+      "narration_gist": "Plotting (n, n) for all integers creates an Archimedean spiral; each step rotates one radian and steps one unit outward."
+    },
+    {
+      "beat": "build",
+      "purpose": "Explain the small-scale 6-spiral structure and introduce residue class terminology",
+      "on_screen": [
+        {
+          "kind": "plot",
+          "zone": "stage",
+          "desc": "six color-coded spiral arms from multiples of 6 and offsets"
+        },
+        {
+          "kind": "text",
+          "zone": "formula_band",
+          "desc": "formula 6k + r for r = 0..5 cycling"
+        },
+        {
+          "kind": "text",
+          "zone": "diagram_right",
+          "desc": "box: 'Residue classes mod 6' with plain-English gloss"
+        }
+      ],
+      "transition": "zoom back in from large scale; six arms highlighted one at a time cycling r value in formula",
+      "narration_gist": "Six radians is just under 2\u03c0, so every six steps nearly completes a full turn, producing six spiral arms \u2014 each is a residue class mod 6."
+    },
+    {
+      "beat": "build",
+      "purpose": "Explain the 44-spiral scale via the 22/7 \u2248 \u03c0 rational approximation",
+      "on_screen": [
+        {
+          "kind": "plot",
+          "zone": "stage",
+          "desc": "44 spiral arms for all whole numbers zoomed to medium scale"
+        },
+        {
+          "kind": "text",
+          "zone": "diagram_right",
+          "desc": "arithmetic box: 44 / 2\u03c0 \u2248 7, so 44/7 \u2248 2\u03c0, so 22/7 \u2248 \u03c0"
+        },
+        {
+          "kind": "text",
+          "zone": "formula_band",
+          "desc": "residue classes mod 44 label"
+        }
+      ],
+      "transition": "zoom out from 6-spiral scale; whole-number spiral shown; 44 arms counted with click sounds",
+      "narration_gist": "Taking 44 steps nearly completes 7 full turns because 44/7 \u2248 2\u03c0 \u2014 the famous 22/7 approximation \u2014 producing 44 spiral arms as residue classes mod 44."
+    },
+    {
+      "beat": "twist",
+      "purpose": "Reveal that spirals come from rational approximations to 2\u03c0, not from primes \u2014 deflating the mystical premise",
+      "on_screen": [
+        {
+          "kind": "plot",
+          "zone": "diagram_left",
+          "desc": "whole-number spiral with 44 arms (clean)"
+        },
+        {
+          "kind": "plot",
+          "zone": "diagram_right",
+          "desc": "prime-only spiral with 20 arms (gapped)"
+        },
+        {
+          "kind": "text",
+          "zone": "conclusion_band",
+          "desc": "two separate questions: 'where do spirals come from?' vs 'what happens filtering to primes?'"
+        }
+      ],
+      "transition": "split screen introduced; cross drawn over original 'primes cause spirals' question",
+      "narration_gist": "The spirals exist for ALL integers, not just primes \u2014 the mystery splits into two independent questions, one about rational approximations and one about prime distribution."
+    },
+    {
+      "beat": "build",
+      "purpose": "Explain which residue classes mod 44 survive when filtering to primes, using coprimality",
+      "on_screen": [
+        {
+          "kind": "plot",
+          "zone": "stage",
+          "desc": "44 colored spiral arms with even and divisible-by-11 arms fading out"
+        },
+        {
+          "kind": "text",
+          "zone": "formula_band",
+          "desc": "\u03c6(44) = 20 with Euler's totient function label"
+        },
+        {
+          "kind": "text",
+          "zone": "diagram_right",
+          "desc": "'coprime / relatively prime' definition box"
+        }
+      ],
+      "transition": "arms eliminated one category at a time (evens, then multiples of 11); remaining 20 arms highlighted",
+      "narration_gist": "Primes can only appear in residue classes coprime to 44 \u2014 exactly \u03c6(44) = 20 of them \u2014 explaining the 20 visible spiral arms."
+    },
+    {
+      "beat": "payoff",
+      "purpose": "Resolve the 280-ray pattern via the even better approximation 355/113 \u2248 \u03c0 (mod 710)",
+      "on_screen": [
+        {
+          "kind": "plot",
+          "zone": "stage",
+          "desc": "nearly-straight rays at large zoom corresponding to residue classes mod 710"
+        },
+        {
+          "kind": "text",
+          "zone": "diagram_right",
+          "desc": "710 / 2\u03c0 \u2248 113.000095; 355/113 \u2248 \u03c0"
+        },
+        {
+          "kind": "text",
+          "zone": "formula_band",
+          "desc": "\u03c6(710) = 280 derivation, factors 2, 5, 71"
+        }
+      ],
+      "transition": "large zoom out; rays highlighted in clumps of 4 with occasional missing tooth explained by factor 71",
+      "narration_gist": "710 steps nearly completes 113 full turns because 355/113 is an extraordinarily good \u03c0 approximation, giving 710 nearly-straight ray classes of which \u03c6(710) = 280 can contain primes."
+    },
+    {
+      "beat": "anchor",
+      "purpose": "Introduce Dirichlet's theorem: primes distribute evenly across all allowable residue classes",
+      "on_screen": [
+        {
+          "kind": "plot",
+          "zone": "stage",
+          "desc": "histogram bars showing prime counts per residue class mod 10 then mod 44, converging to equal heights"
+        },
+        {
+          "kind": "text",
+          "zone": "formula_band",
+          "desc": "Dirichlet's theorem: fraction of primes with r mod n \u2192 1/\u03c6(n)"
+        },
+        {
+          "kind": "text",
+          "zone": "title_band",
+          "desc": "'Dirichlet's theorem' label"
+        }
+      ],
+      "transition": "histogram replaces spiral diagram; bars animate as more primes are counted, leveling off",
+      "narration_gist": "The deep payoff: Dirichlet's theorem (1837) proves primes split equally among all coprime residue classes \u2014 a hard fact proven via complex analysis."
+    },
+    {
+      "beat": "anchor",
+      "purpose": "Zoom out meta-lesson: playful exploration of arbitrary data can lead to deep mathematics",
+      "on_screen": [
+        {
+          "kind": "text",
+          "zone": "stage",
+          "desc": "reflective closing monologue text (no diagram)"
+        }
+      ],
+      "transition": "all visuals removed; narration only with sparse text",
+      "narration_gist": "The polar plot of primes was arbitrary and unimportant, but following its questions leads to Dirichlet's theorem \u2014 and rediscovering ideas yourself makes them stick as familiar friends."
+    }
+  ],
+  "lessons": [
+    "Open with the most visually surprising output first, then work backwards to explain it \u2014 earn attention before demanding comprehension.",
+    "Split a compound mystery into explicit sub-questions on screen so the audience always knows which thread is currently being answered.",
+    "Use a zoom animation as a narrative device: each zoom level reveals a new layer of the pattern and triggers the next explanatory beat.",
+    "Introduce jargon only after the viewer has already understood the concept intuitively \u2014 then frame the term as a compact label for something familiar.",
+    "When deflating a false premise, show the corrected version side-by-side with the original so the distinction is spatial, not just verbal.",
+    "Use live-updating histograms or counters to let abstract theorems reveal themselves empirically before stating them formally."
+  ],
+  "slug": "prime-spirals",
+  "tags": "prime spiral number theory residue mod pattern polar"
+}

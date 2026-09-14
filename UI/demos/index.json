@@ -1,0 +1,26 @@
+[
+  {
+    "slug": "pi",
+    "question": "explain pi"
+  },
+  {
+    "slug": "derivative",
+    "question": "what is a derivative"
+  },
+  {
+    "slug": "gravity",
+    "question": "what is gravity"
+  },
+  {
+    "slug": "fourier",
+    "question": "how do fourier series work"
+  },
+  {
+    "slug": "vector",
+    "question": "what is a vector"
+  },
+  {
+    "slug": "quick-math",
+    "question": "what is 12 times 12"
+  }
+]
